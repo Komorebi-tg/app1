@@ -15,4 +15,38 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button_day"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Setting"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintStart_toEndOf="@+id/button_day"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_my_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="46dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
