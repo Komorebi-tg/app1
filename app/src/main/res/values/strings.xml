@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">app1</string>
+    <string name="AboutUniversity">About University</string>
+    <string name="Setting">Setting</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="MentalHealth">Mental Health</string>
+    <string name="Advice">Advice</string>
 </resources>
