@@ -82,4 +82,18 @@
         app:layout_constraintStart_toEndOf="@+id/button_mental_health"
         app:layout_constraintTop_toBottomOf="@+id/button_my_profile" />
 
+    <Button
+        android:id="@+id/button_saved_post1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_day" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
