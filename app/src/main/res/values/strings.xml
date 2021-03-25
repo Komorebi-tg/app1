@@ -5,4 +5,6 @@
     <string name="MyProfile">My Profile</string>
     <string name="MentalHealth">Mental Health</string>
     <string name="Advice">Advice</string>
+    <string name="my_profile_activity_text_view">My Profile</string>
+    <string name="setting_activity_text_view">Setting</string>
 </resources>
