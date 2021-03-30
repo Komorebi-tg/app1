@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         myProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
             }
         });
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         mentalHealthButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
             }
         });
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         adviceButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AdviceFragment()).commit();
             }
         });
