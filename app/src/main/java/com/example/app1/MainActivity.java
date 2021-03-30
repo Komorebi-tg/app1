@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_settings:
                             selectedFragment = new SettingsFragment();
                             break;
+                        case R.id.nav_mental_health:
+                            selectedFragment = new MentalHealthFragment();
+                            break;
                         case R.id.nav_my_profile:
                             selectedFragment = new MyProfileFragment();
                             break;
