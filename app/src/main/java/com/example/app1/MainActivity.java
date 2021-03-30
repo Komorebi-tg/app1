@@ -24,14 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
-        Button settingButton = (Button)findViewById(R.id.button_setting);
+        Button settingsButton = (Button)findViewById(R.id.button_setting);
         Button myProfileButton = (Button)findViewById(R.id.button_my_profile);
         Button mentalHealthButton = (Button)findViewById(R.id.button_mental_health);
         Button adviceButton = (Button)findViewById(R.id.button_advice);
 
-        settingButton.setOnClickListener(new View.OnClickListener() {
+        settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                Button settingsButton = (Button)findViewById(R.id.button_setting);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
