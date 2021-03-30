@@ -2,6 +2,8 @@ package com.example.app1;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +23,25 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
+        Button settingButton = (Button)findViewById(R.id.button_setting);
+        Button myProfileButton = (Button)findViewById(R.id.button_my_profile);
+        Button mentalHealthButton = (Button)findViewById(R.id.button_mental_health);
+        Button adviceButton = (Button)findViewById(R.id.button_advice);
+
+        settingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment).commit();
+            }
+        });
+
+
+
     }
+
+
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
