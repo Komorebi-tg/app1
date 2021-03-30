@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         settingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
 
