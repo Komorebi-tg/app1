@@ -24,17 +24,27 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
-        Button settingsButton = (Button)findViewById(R.id.button_setting);
+        Button settingsButton = findViewById(R.id.button_setting);
         Button myProfileButton = (Button)findViewById(R.id.button_my_profile);
         Button mentalHealthButton = (Button)findViewById(R.id.button_mental_health);
         Button adviceButton = (Button)findViewById(R.id.button_advice);
 
-        settingsButton.setOnClickListener(new View.OnClickListener() {
+
+
+/*        settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container, new SettingsFragment());
+                fragmentTransaction.commit();
+
+
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
+
+ */
 
 
         myProfileButton.setOnClickListener(new View.OnClickListener() {
