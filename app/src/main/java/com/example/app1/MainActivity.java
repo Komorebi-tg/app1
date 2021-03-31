@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
-        //Button settingsButton = (Button) findViewById(R.id.button_setting);
+        Button settingsButton = (Button) findViewById(R.id.button_setting);
         Button myProfileButton = (Button) findViewById(R.id.button_my_profile);
         Button mentalHealthButton = (Button) findViewById(R.id.button_mental_health);
         Button adviceButton = (Button) findViewById(R.id.button_advice);
@@ -84,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
     }
 
+
+    public void onClickButton2(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
+    }
 
 
 
