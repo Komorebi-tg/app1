@@ -3,7 +3,6 @@ package com.example.app1;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-/*        settingsButton.setOnClickListener(new View.OnClickListener() {
+        /*settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
@@ -37,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
 
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
 
- */
+         */
+
 
 /*        myProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,9 +75,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickButton1(View view) {
+/*    public void onClickButton1(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
     }
+
+ */
 
 
     public void onClickButton2(View view) {
