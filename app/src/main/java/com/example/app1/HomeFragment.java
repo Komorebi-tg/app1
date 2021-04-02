@@ -14,13 +14,13 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        Button settingsButton = (Button) findViewById(R.id.button_settings);
-        Button ScolarshipsButton = (Button) findViewById(R.id.button_scholarships);
-        Button mentalHealthButton = (Button) findViewById(R.id.button_mental_health);
-        Button activityButton = (Button) findViewById(R.id.button_activity);
-
+        Button settingsButton = (Button) view.findViewById(R.id.button_settings);
+        Button ScolarshipsButton = (Button) view.findViewById(R.id.button_scholarships);
+        Button mentalHealthButton = (Button) view.findViewById(R.id.button_mental_health);
+        Button activityButton = (Button) view.findViewById(R.id.button_activity);
+        return view;
     }
 
 
