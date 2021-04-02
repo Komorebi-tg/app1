@@ -7,8 +7,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:icon="@drawable/ic_search_vector"
+            android:showAsAction="collapseActionView"
+            android:title="@string/navigation_search">
+
+        </SearchView>
 
         <Button
             android:id="@+id/button_search"
@@ -19,17 +38,6 @@
             android:layout_weight="1"
             android:text="@string/Search"
             app:backgroundTint="@color/teal_200" />
-
-        <SearchView
-            android:id="@+id/search"
-            android:layout_width="288dp"
-            android:layout_height="344dp"
-            android:layout_weight="5"
-            android:icon="@drawable/ic_search_vector"
-            android:showAsAction="collapseActionView"
-            android:title="@string/navigation_search">
-
-        </SearchView>
 
     </LinearLayout>
 
