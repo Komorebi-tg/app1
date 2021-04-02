@@ -45,6 +45,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="University"
@@ -55,28 +56,97 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".UniversityOfTokyoEngineeringFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        //大学名
+                       <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="東京大学　工学部"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+                        //大学の特色
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大学の特色"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="この大学は〜"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+                        //場所
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10"
+                    android:text="・偏差値"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30"
+                    android:layout_marginLeft="30"
+                    android:text="67.5（河合塾）"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
 
 
-
-<ScrollView
-android:layout_width="match_parent"
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_height="match_parent">
-
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".UniversityOfTokyoEngineeringFragment">
-
-
-
-
-
-
-
-
-
-    </FrameLayout>
-</ScrollView>
+        </FrameLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
