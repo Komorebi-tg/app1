@@ -23,7 +23,6 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
-        android:onClick="onClickButton1"
         android:text="@string/Setting"
         android:textColor="@color/black"
         android:textSize="10sp"

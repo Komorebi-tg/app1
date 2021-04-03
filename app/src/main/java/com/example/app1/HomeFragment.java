@@ -1,6 +1,7 @@
 package com.example.app1;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,11 +28,15 @@ public class HomeFragment extends Fragment {
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.e(null, "fragment:");
                 FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, new SettingsFragment());
-                fragmentTransaction.commit();
-
+                Log.e(null, "fragment:" + fragmentManager);
+                if (fragmentManager != null) {
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment_container, new SettingsFragment());
+                    Log.e(null, "replaced");
+                    fragmentTransaction.commit();
+                }
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
