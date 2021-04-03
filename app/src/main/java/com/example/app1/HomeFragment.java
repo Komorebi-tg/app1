@@ -22,7 +22,7 @@ public class HomeFragment extends Fragment {
         Button scolarshipsButton = (Button) view.findViewById(R.id.button_scholarships);
         Button mentalHealthButton = (Button) view.findViewById(R.id.button_mental_health);
         Button activityButton = (Button) view.findViewById(R.id.button_activity);
-        return view;
+
 
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +35,6 @@ public class HomeFragment extends Fragment {
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
-
+        return view;
     }
 }
