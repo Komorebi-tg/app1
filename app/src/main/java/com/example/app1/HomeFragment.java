@@ -1,7 +1,6 @@
 package com.example.app1;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +9,6 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 public class HomeFragment extends Fragment {
     @Nullable
@@ -25,7 +22,7 @@ public class HomeFragment extends Fragment {
         Button activityButton = (Button) view.findViewById(R.id.button_activity);
 
 
-        settingsButton.setOnClickListener(new View.OnClickListener() {
+        /*settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.e(null, "fragment:");
@@ -40,6 +37,8 @@ public class HomeFragment extends Fragment {
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
             }
         });
+
+         */
         return view;
     }
 }

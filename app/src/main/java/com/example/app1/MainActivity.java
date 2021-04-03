@@ -81,12 +81,21 @@ public class MainActivity extends AppCompatActivity {
 
  */
 
-
-    public void onClickButton2(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
+    public void onClickButton1(View view) {
+        BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        navigationView.setSelectedItemId(R.id.nav_settings);
+        navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
     }
 
+    public void onClickButton2(View view) {
+        BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        navigationView.setSelectedItemId(R.id.nav_my_profile);
+        navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_my_profile));
+    }
 
+    public void onClickButton3(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
+    }
 
 
 
