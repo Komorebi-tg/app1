@@ -100,7 +100,7 @@
                         <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="大学の特色"
+                        android:text="@string/tokushoku"
                         android:textColor="@color/black"
                         android:textSize="20dp"/>
                         <TextView
@@ -113,7 +113,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Location"
+                            android:text="@string/location"
                             android:textSize="20dp"
                             android:textColor="@color/black"/>
                         <TextView
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="・偏差値"
+                    android:text="@string/hennsachi"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -144,9 +144,204 @@
                     android:textColor="@color/black"
                     android:textSize="15dp"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nyuushikekka"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="理科1類"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dip"
+                    android:orientation="vertical"
+                    android:background="@color/black"
+                    android:padding="1dp">
+
+                    <TableRow>
+                        <TextView
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:text="募集人数"
+                            android:layout_margin="1dp"
+                            android:textSize="10dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="志願者数"
+                            android:layout_margin="1dp"
+                            android:textSize="10dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="受験者数"
+                            android:layout_margin="1dp"
+                            android:textSize="10dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="合格者数"
+                            android:layout_margin="1dp"
+                            android:textSize="10dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="入学者数（推薦入試)"
+                            android:layout_margin="1dp"
+                            android:textSize="10dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    //2020年度
+                    <TableRow>
+                        <TextView
+                            android:text="2020"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1108"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2925"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2737"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1125"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1147(32)"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    //2019年度
+                    <TableRow>
+                        <TextView
+                            android:text="2019"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1108"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2915"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2748"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1128"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1154(29)"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    //2018年度
+                    <TableRow>
+                        <TextView
+                            android:text="2018"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1108"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2992"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2750"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1130"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1152(27)"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    //2017年度
+                    <TableRow>
+                        <TextView
+                            android:text="2017"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1108"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2901"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="2741"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1126"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:text="1146(31)"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    </TableLayout>
+
+
+
+
+
             </LinearLayout>
-
-
         </FrameLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

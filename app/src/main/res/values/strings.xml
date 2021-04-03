@@ -18,4 +18,10 @@
     <string name="Scholarships">scholarships</string>
     <string name="Activity">Activity</string>
     <string name="Search">検索</string>
+    <string name="hennsachi">・偏差値</string>
+    <string name="tokushoku">大学の特色</string>
+    <string name="location">Location</string>
+    <string name="nyuushikekka">・入試結果</string>
+
+
 </resources>
