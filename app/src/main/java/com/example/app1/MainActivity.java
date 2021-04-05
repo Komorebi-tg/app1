@@ -8,6 +8,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.app1.settings.SettingsAccountChangeMailAddressFragment;
+import com.example.app1.settings.SettingsAccountChangeMailAddressPasswordFragment;
+import com.example.app1.settings.SettingsAccountChangePasswordFragment;
+import com.example.app1.settings.SettingsAccountFragment;
+import com.example.app1.settings.SettingsFragment;
+import com.example.app1.settings.SettingsLogoutFragment;
+import com.example.app1.settings.SettingsNotificationFragment;
+import com.example.app1.settings.SettingsPrivacyFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 // test comment2
@@ -22,64 +30,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-
-
-
-        /*settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, new SettingsFragment());
-                fragmentTransaction.commit();
-
-
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-            }
-        });
-
-         */
-
-
-/*        myProfileButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment selectedFragment = new MyProfileFragment();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-
-            }
-        });
-
- */
-
-
-
-/*        mentalHealthButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
-            }
-        });
-
- */
-
-
-/*        adviceButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AdviceFragment()).commit();
-            }
-        });
-
- */
-
     }
 
-/*    public void onClickButton1(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-    }
-
- */
 
     public void onClickButton1(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -95,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButton3(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
+    }
+
+    public void onClickButton31(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthExample1Fragment()).commit();
     }
 
     public void onClickButton11(View view) {
