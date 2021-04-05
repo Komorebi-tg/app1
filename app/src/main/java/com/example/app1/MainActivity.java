@@ -97,7 +97,33 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
     }
 
+    public void onClickButton11(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountFragment()).commit();
+    }
 
+    public void onClickButton111(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangePasswordFragment()).commit();
+    }
+
+    public void onClickButton112(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressFragment()).commit();
+    }
+
+    public void onClickButton1121(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
+    }
+
+    public void onClickButton12(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsNotificationFragment()).commit();
+    }
+
+    public void onClickButton13(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsPrivacyFragment()).commit();
+    }
+
+    public void onClickButton16(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsLogoutFragment()).commit();
+    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

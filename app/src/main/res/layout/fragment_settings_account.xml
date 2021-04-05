@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
 
@@ -17,8 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView_settings_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Account"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_settings" />
+
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,43 +41,31 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_settings">
+        app:layout_constraintTop_toBottomOf="@+id/textView_settings_account">
 
         <Button
-            android:id="@+id/button_settings_account"
-            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/button_settings_account_change_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickButton11"
-            android:text="@string/Account"
+            android:onClick="onClickButton111"
+            android:text="@string/ChangePassword"
             android:textColor="@color/black"
             app:backgroundTint="@color/Mizuiro" />
 
         <Button
-            android:id="@+id/button_settings_notification"
-            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/button_settings_account_change_mail_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickButton12"
-            android:text="@string/Notification"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
-
-        <Button
-            android:id="@+id/button_settings_privacy"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickButton13"
-            android:text="@string/Privacy"
+            android:onClick="onClickButton112"
+            android:text="@string/ChangeMailAddress"
             android:textColor="@color/black"
             app:backgroundTint="@color/Mizuiro" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
@@ -74,20 +74,20 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <Button
-            android:id="@+id/button_settings_account_centre"
+            android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/AccountCentre"
+            android:text="@string/ChangeRegistratedInformation"
             android:textColor="@color/black"
             app:backgroundTint="@color/Mizuiro" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
@@ -96,22 +96,13 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <Button
-            android:id="@+id/button_settings_login_information"
+            android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/LoginInformation"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
-
-        <Button
-            android:id="@+id/button_settings_logout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickButton16"
-            android:text="@string/Logout"
+            android:text="@string/Language"
             android:textColor="@color/black"
             app:backgroundTint="@color/Mizuiro" />
     </LinearLayout>
