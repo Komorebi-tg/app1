@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
     }
 
-    public void onClickButton2(View view) {
+
+
+    public void onClickButton0(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_my_profile);
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_my_profile));
@@ -80,6 +82,19 @@ public class MainActivity extends AppCompatActivity {
     public void onClickButton16(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsLogoutFragment()).commit();
     }
+
+    public void onClickButton2(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipFragment()).commit();
+    }
+
+    public void onClickButton4(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivityFragment()).commit();
+    }
+
+    public void onClickButton9(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversityFragment()).commit();
+    }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

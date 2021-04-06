@@ -74,22 +74,31 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="新型コロナウイルスとどう付き合うか？"
+                android:text="【睡眠を制する者は受験を制する！？】驚きの研究結果が明らかに！"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="　睡眠と勉強のバランスをどう保つか、という問題は数多くの受験生が抱えている問題です。みなさんの中にも「寝ても寝ても疲れがとれない」だとか「寝ようと思ったらもう2時を回っていた」なんて経験がある方も多いのでは無いでしょうか？私も受験生のときにはよくクマを作って家族に心配されていました。  　この睡眠と勉強のバランスをどうとるべきかという問題は永遠の命題と思われがちですが最新の研究でもっとも効率的な両立方法が明らかになりました。 "
+                android:textColor="@color/black" />
+
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="294dp"
-                app:srcCompat="@drawable/app1_mental_health_example1_photo" />
+                android:layout_width="wrap_content"
+                android:layout_height="317dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/app1_mental_health_example1_2" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="156dp"
-                android:text="自身にとってストレスになるかどうかは、その出来事をどのように受け止めているかに左右されます。どのようなことでも柔軟に肯定的に捉えることができれば脳（心）に良いストレスにはなり、「嫌だ！困った！」と否定的に捉え、暗い気持ちになると悪いストレスになっていきます。この悪いストレス状態が持続すると脳に悪い影響を与え、メンタルヘルスに悪影響をきたします。"
+                android:text="　東京大学のOOO教授の研究結果によると、毎日同じ時間に就寝するのがもっとも効率的に生産力を上げることができるようです。以下がその研究データで、毎日同じ時間帯に就寝した人とバラバラの時間帯に就寝した人の集中力の持続時間は1セット平均30分以上も変わってくるようです。またデータ2にもあるように勉強時間自体も1週間で3時間ほどの差が生じることも明らかになりました。"
                 android:textColor="@color/black" />
+
         </LinearLayout>
 
     </ScrollView>
