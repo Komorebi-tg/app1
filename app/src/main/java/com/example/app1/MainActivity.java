@@ -48,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickButton3(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
+        BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        navigationView.setSelectedItemId(R.id.nav_mental_health);
+        navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_mental_health));
     }
 
     public void onClickButton31(View view) {
