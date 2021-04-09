@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="@string/AllowNotification"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
 
         <Button
             android:id="@+id/button_settings_notification_Do_Not_Allow"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:text="@string/DoNotAllowNotification"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
 
     </LinearLayout>
 
