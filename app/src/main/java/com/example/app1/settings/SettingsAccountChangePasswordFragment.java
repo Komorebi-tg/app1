@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +17,33 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_settings_account_change_password, container, false);
+        View view = inflater.inflate(R.layout.fragment_my_profile, container, false);
+        EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
+        EditText editTextNewPassword = view.findViewById(R.id.editTextTextPassword_new_password);
+        EditText editTextNewPasswordConfirm = view.findViewById(R.id.editTextTextPassword_new_password_confirmation);
+        String currentPassword = editTextCurrentPassword.getText().toString();
+        Button buttonSettingsAccountChangePasswordChange = view.findViewById(R.id.button_settings_account_change_password_change);
+
+        /*buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (currentPassword == BasicProfilePassword) {
+                    if (editTextNewPassword == editTextNewPasswordConfirm) {
+                        //process the button action
+                    }
+                    else {
+                        //display "New passwords don't match"
+                    }
+                    }
+                else {
+                    //display "Incorrect current password"
+                }
+            }
+        });
+
+         */
+
+        return view;
+
     }
 }

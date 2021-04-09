@@ -20,7 +20,8 @@
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3" />
+            android:layout_weight="3"
+            android:text="name" />
 
         <EditText
             android:id="@+id/editTextName"
@@ -44,22 +45,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:hint="Nickname"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Name"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:hint="Name"/>
     </LinearLayout>
 
     <LinearLayout
