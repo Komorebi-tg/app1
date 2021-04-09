@@ -39,7 +39,7 @@
             android:onClick="onClickButton11"
             android:text="@string/Account"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
 
         <Button
             android:id="@+id/button_settings_notification"
@@ -49,7 +49,7 @@
             android:onClick="onClickButton12"
             android:text="@string/Notification"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
 
         <Button
             android:id="@+id/button_settings_privacy"
@@ -59,7 +59,7 @@
             android:onClick="onClickButton13"
             android:text="@string/Privacy"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:text="@string/AccountCentre"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,7 +104,7 @@
             android:layout_height="wrap_content"
             android:text="@string/LoginInformation"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
 
         <Button
             android:id="@+id/button_settings_logout"
@@ -113,7 +113,7 @@
             android:onClick="onClickButton16"
             android:text="@string/Logout"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

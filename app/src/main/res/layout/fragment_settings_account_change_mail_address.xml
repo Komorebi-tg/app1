@@ -75,7 +75,7 @@
             android:onClick="onClickButton1121"
             android:text="@string/DoChangeMailAddress"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

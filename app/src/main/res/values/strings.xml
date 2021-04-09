@@ -41,6 +41,7 @@
     <string name="NewPassword">新しいパスワード</string>
     <string name="Change">変更</string>
     <string name="NewPasswordConfirm">新しいパスワード　確認</string>
+    <string name="University">University</string>
 
 
 </resources>

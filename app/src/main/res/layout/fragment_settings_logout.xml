@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Logout"
             android:textColor="@color/black"
-            app:backgroundTint="@color/Mizuiro" />
+            app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

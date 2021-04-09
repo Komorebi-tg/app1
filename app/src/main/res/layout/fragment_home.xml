@@ -2,33 +2,34 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/牡蠣色">
 
     <Button
         android:id="@+id/button_my_profile"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:onClick="onClickButton0"
         android:text="@string/MyProfile"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/Mizuiro"
-        app:layout_constraintEnd_toStartOf="@+id/button_settings"
+        app:backgroundTint="@color/ミルク色"
+        app:layout_constraintEnd_toStartOf="@+id/button_university"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_settings"
+        android:id="@+id/button_university"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:onClick="onClickButton1"
-        android:text="@string/Setting"
+        android:text="@string/University"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
+        app:backgroundTint="@color/スノーホワイト"
         app:layout_constraintEnd_toStartOf="@+id/button_scholarships"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_my_profile"
@@ -38,15 +39,15 @@
         android:id="@+id/button_scholarships"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:onClick="onClickButton2"
         android:text="@string/Scholarships"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
+        app:backgroundTint="@color/スノーホワイト"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_settings"
+        app:layout_constraintStart_toEndOf="@+id/button_university"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -58,11 +59,11 @@
         android:text="@string/MentalHealth"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
+        app:backgroundTint="@color/スノーホワイト"
         app:layout_constraintEnd_toStartOf="@+id/button_activity"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_my_profile"
-        app:layout_constraintTop_toBottomOf="@+id/button_settings" />
+        app:layout_constraintTop_toBottomOf="@+id/button_university" />
 
     <Button
         android:id="@+id/button_activity"
@@ -73,82 +74,107 @@
         android:text="@string/Activity"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
+        app:backgroundTint="@color/スノーホワイト"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_mental_health"
         app:layout_constraintTop_toBottomOf="@+id/button_scholarships" />
 
     <Button
-        android:id="@+id/button_saved_post1"
+        android:id="@+id/button_saved_university"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:text="Button"
+        android:layout_marginTop="50dp"
+        android:text="University"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
-        app:layout_constraintEnd_toStartOf="@+id/button_saved_post2"
+        app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintEnd_toStartOf="@+id/button_saved_scholarship"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_my_profile" />
 
     <Button
-        android:id="@+id/button_saved_post2"
+        android:id="@+id/button_saved_scholarship"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:text="Button"
+        android:layout_marginTop="50dp"
+        android:text="Scholarship"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
-        app:layout_constraintEnd_toStartOf="@+id/button_about_university"
+        app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintEnd_toStartOf="@+id/button_setting"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_saved_post1"
+        app:layout_constraintStart_toEndOf="@+id/button_saved_university"
         app:layout_constraintTop_toBottomOf="@+id/button_my_profile" />
 
     <Button
-        android:id="@+id/button_saved_post3"
+        android:id="@+id/button_saved_mental_health"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
-        android:text="Button"
+        android:text="Mental Health"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
-        app:layout_constraintEnd_toStartOf="@+id/button_saved_post4"
+        app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintEnd_toStartOf="@+id/button_saved_activity"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_saved_post1" />
+        app:layout_constraintTop_toBottomOf="@+id/button_saved_university" />
 
     <Button
-        android:id="@+id/button_saved_post4"
+        android:id="@+id/button_saved_activity"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
-        android:text="Button"
+        android:text="Activity"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:backgroundTint="@color/Mizuiro"
-        app:layout_constraintEnd_toStartOf="@+id/button_about_university"
+        app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintEnd_toStartOf="@+id/button_setting"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_saved_post3"
-        app:layout_constraintTop_toBottomOf="@+id/button_saved_post2" />
+        app:layout_constraintStart_toEndOf="@+id/button_saved_mental_health"
+        app:layout_constraintTop_toBottomOf="@+id/button_saved_scholarship" />
 
     <Button
-        android:id="@+id/button_about_university"
+        android:id="@+id/button_setting"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:onClick="onClickButton9"
-        android:text="@string/AboutUniversity"
+        android:text="@string/Setting"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/Mizuiro"
+        app:backgroundTint="@color/ミルク色"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_saved_post2"
+        app:layout_constraintStart_toEndOf="@+id/button_saved_scholarship"
         app:layout_constraintTop_toBottomOf="@+id/button_activity" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Saved"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_saved_scholarship"
+        app:layout_constraintEnd_toEndOf="@+id/button_saved_scholarship"
+        app:layout_constraintStart_toStartOf="@+id/button_saved_university"
+        app:layout_constraintTop_toBottomOf="@+id/button_my_profile" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_scholarships"
+        app:layout_constraintEnd_toEndOf="@+id/button_scholarships"
+        app:layout_constraintStart_toStartOf="@+id/button_university"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
