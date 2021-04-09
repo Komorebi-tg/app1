@@ -24,6 +24,7 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
         String currentPassword = editTextCurrentPassword.getText().toString();
         Button buttonSettingsAccountChangePasswordChange = view.findViewById(R.id.button_settings_account_change_password_change);
 
+        //buttonSettingsAccountChangePasswordChangeが押されたときのアクション
         /*buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
