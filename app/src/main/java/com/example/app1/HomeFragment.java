@@ -16,7 +16,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        Button settingsButton = view.findViewById(R.id.button_settings);
+        Button settingsButton = view.findViewById(R.id.button_university);
         Button scolarshipsButton = (Button) view.findViewById(R.id.button_scholarships);
         Button mentalHealthButton = (Button) view.findViewById(R.id.button_mental_health);
         Button activityButton = (Button) view.findViewById(R.id.button_activity);
