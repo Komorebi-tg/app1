@@ -29,8 +29,11 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-    }
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        //display BasicProfileEnteringFragment if the basic profiles are not yet entered
+
+        }
+
 
 
     public void onClickButton1(View view) {
@@ -126,4 +129,6 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
+
+
 }
