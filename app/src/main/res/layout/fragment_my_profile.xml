@@ -52,11 +52,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="Gender"/>
+            android:text="Gender" />
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,6 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:text="Grade"/>
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -228,6 +231,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -275,10 +279,6 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト" />
     </LinearLayout>
-
-
-
-
 
 
 </LinearLayout>
