@@ -4,8 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".UniversityOfTokyoEngineeringFragment">
+    android:layout_height="match_parent"
+    tools:context=".UniversityOfTokyoEngineeringFragment"
+    android:background="@color/オイスターホワイト">
 
     <LinearLayout
         android:id="@+id/linearLayout"
