@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickButton1(View view) {
-        BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        navigationView.setSelectedItemId(R.id.nav_settings);
-        navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversityFragment()).commit();
     }
 
 
