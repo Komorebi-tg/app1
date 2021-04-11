@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">app1</string>
+    <string name="app_name">Ed bridge</string>
     <string name="AboutUniversity">About University</string>
     <string name="Setting">Setting</string>
     <string name="MyProfile">My Profile</string>
@@ -42,6 +42,7 @@
     <string name="Change">変更</string>
     <string name="NewPasswordConfirm">新しいパスワード　確認</string>
     <string name="University">University</string>
+    <string name="icon">TODO</string>
     <string-array name="gender_list">
         <item>女性</item>
         <item>男性</item>
