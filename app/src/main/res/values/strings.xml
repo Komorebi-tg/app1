@@ -42,6 +42,7 @@
     <string name="Change">変更</string>
     <string name="NewPasswordConfirm">新しいパスワード　確認</string>
     <string name="University">University</string>
+    <string name="icon">TODO</string>
     <string-array name="gender_list">
         <item>女性</item>
         <item>男性</item>
