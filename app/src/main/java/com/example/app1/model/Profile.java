@@ -10,5 +10,6 @@ public class Profile {
     public String name;
     public String nickname;
     public String gender;
+    public String schoolName;
     // ... add more fields here
 }

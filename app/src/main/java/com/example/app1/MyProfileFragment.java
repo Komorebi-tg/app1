@@ -24,6 +24,7 @@ public class MyProfileFragment extends Fragment {
         EditText editTextname = view.findViewById(R.id.editTextName);
         EditText editTextNickname = view.findViewById(R.id.editTextNickname);
         Spinner spinnerGender = view.findViewById(R.id.spinnerGender);
+        EditText editTextSchoolName = view.findViewById(R.id.editTextSchoolName);
 
 
         // Initialize profile view from database contents.
@@ -35,7 +36,7 @@ public class MyProfileFragment extends Fragment {
             editTextname.setText(profile.name);
             editTextNickname.setText(profile.nickname);
             //spinnerGender.getSelectedItem();  setTextに対応するところがわからなかった
-
+            editTextSchoolName.setText(profile.schoolName);
             // ... set more fields here
         }
 
