@@ -34,7 +34,8 @@ public class MyProfileFragment extends Fragment {
         if (profile != null && profile.name != null) {
             editTextname.setText(profile.name);
             editTextNickname.setText(profile.nickname);
-            //spinnerGender.setAdapter(profile.gender);
+            //spinnerGender.getSelectedItem();  setTextに対応するところがわからなかった
+
             // ... set more fields here
         }
 
