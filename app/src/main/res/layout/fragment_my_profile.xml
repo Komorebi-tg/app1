@@ -75,11 +75,13 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="School Name" />
+
         <EditText
+            android:id="@+id/editTextSchoolName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="School Name"/>
+            android:hint="School Name" />
     </LinearLayout>
 
     <LinearLayout
