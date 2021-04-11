@@ -19,16 +19,14 @@
 
         <TextView
             android:id="@+id/textViewName"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:text="name" />
 
         <EditText
             android:id="@+id/editTextName"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="7"
             android:hint="Name" />
     </LinearLayout>
 
@@ -36,16 +34,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Nickame"/>
+            android:text="Nickame" />
+
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/editTextNickname"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:hint="Nickname"/>
+            android:hint="Nickname" />
     </LinearLayout>
 
     <LinearLayout
@@ -54,27 +53,28 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:text="Gender" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:hint="Gender"/>
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/gender_list"
+            android:spinnerMode="dropdown" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="School Name"/>
+            android:text="School Name" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,11 +86,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Grade"/>
+            android:text="Grade" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -103,11 +103,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Birth Date"/>
+            android:text="Birth Date" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -119,11 +119,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="第一志望校"/>
+            android:text="第一志望校" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -135,11 +135,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="第二志望校"/>
+            android:text="第二志望校" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,11 +151,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="第三志望校"/>
+            android:text="第三志望校" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,11 +167,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Interest ①"/>
+            android:text="Interest ①" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,11 +183,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Interest ②"/>
+            android:text="Interest ②" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -199,11 +199,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Interest ③"/>
+            android:text="Interest ③" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -215,11 +215,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Interest ④"/>
+            android:text="Interest ④" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -233,26 +233,26 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Mail Adress"/>
+            android:text="Mail Adress" />
+
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="Mail Adress"/>
+            android:hint="Mail Adress" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Phone Number"/>
+            android:text="Phone Number" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -264,17 +264,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Save my plofile"/>
+            android:text="Save my plofile" />
 
         <Button
             android:id="@+id/Button_save"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Save"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト" />

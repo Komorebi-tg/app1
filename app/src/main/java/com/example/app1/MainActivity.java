@@ -94,7 +94,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickButton9(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversityFragment()).commit();
+        BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        navigationView.setSelectedItemId(R.id.nav_settings);
+        navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
     }
 
 

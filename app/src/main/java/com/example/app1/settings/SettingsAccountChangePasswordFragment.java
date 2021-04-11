@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,12 +15,14 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_my_profile, container, false);
-        EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
+        View view = inflater.inflate(R.layout.fragment_settings_account, container, false);
+        /*EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
         EditText editTextNewPassword = view.findViewById(R.id.editTextTextPassword_new_password);
         EditText editTextNewPasswordConfirm = view.findViewById(R.id.editTextTextPassword_new_password_confirmation);
         String currentPassword = editTextCurrentPassword.getText().toString();
         Button buttonSettingsAccountChangePasswordChange = view.findViewById(R.id.button_settings_account_change_password_change);
+
+         */
 
         //buttonSettingsAccountChangePasswordChangeが押されたときのアクション
         /*buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {

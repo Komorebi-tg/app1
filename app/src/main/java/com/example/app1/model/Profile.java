@@ -8,5 +8,7 @@ public class Profile {
     @PrimaryKey
     public long uid;
     public String name;
+    public String nickname;
+    public String gender;
     // ... add more fields here
 }
