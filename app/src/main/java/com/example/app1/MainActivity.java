@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_my_profile));
     }
 
+    public void onClickButton01(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
+    }
+
     public void onClickButton3(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_mental_health);
@@ -98,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setSelectedItemId(R.id.nav_settings);
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
     }
+
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =

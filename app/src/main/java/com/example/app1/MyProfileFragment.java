@@ -50,6 +50,7 @@ public class MyProfileFragment extends Fragment {
                // ... set more fields here
                db.profileDao().delete();            // delete existing profile
                db.profileDao().insert(newProfile);  // insert new profile
+               getFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileDisplayFragment()).commit();
            });
         }
 
