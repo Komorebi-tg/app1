@@ -25,6 +25,15 @@ public class MyProfileFragment extends Fragment {
         EditText editTextNickname = view.findViewById(R.id.editTextNickname);
         Spinner spinnerGender = view.findViewById(R.id.spinnerGender);
         EditText editTextSchoolName = view.findViewById(R.id.editTextSchoolName);
+        /*EditText editTextFirstChoice = view.findViewById(R.id.editTextFirstChoice);
+        EditText editTextSecondChoice = view.findViewById(R.id.editTextSecondChoice);
+        EditText editTextThirdChoice = view.findViewById(R.id.editTextThirdChoice);
+        EditText editTextInterest1 = view.findViewById(R.id.editTextInterest1);
+        EditText editTextInterest2 = view.findViewById(R.id.editTextInterest2);
+        EditText editTextInterest3 = view.findViewById(R.id.editTextInterest3);
+        EditText editTextInterest4 = view.findViewById(R.id.editTextInterest4);
+        EditText editTextEmail = view.findViewById(R.id.editTextEmail);*/
+
 
 
         // Initialize profile view from database contents.
@@ -36,7 +45,18 @@ public class MyProfileFragment extends Fragment {
             editTextname.setText(profile.name);
             editTextNickname.setText(profile.nickname);
             //spinnerGender.getSelectedItem(profile.gender);
+            //profile.index_gender = spinnerGender.getSelectedItemPosition();
+            // spinnerGender.setSelection(profile.index_gender);
+            profile.gender = spinnerGender.getSelectedItem().toString();
             editTextSchoolName.setText(profile.schoolName);
+            /*editTextFirstChoice.setText(profile.firstChoice);
+            editTextSecondChoice.setText(profile.secondChoice);
+            editTextThirdChoice.setText(profile.thirdChoice);
+            editTextInterest1.setText(profile.interest1);
+            editTextInterest2.setText(profile.interest2);
+            editTextInterest3.setText(profile.interest3);
+            editTextInterest4.setText(profile.interest4);
+            editTextEmail.setText(profile.email);*/
             // ... set more fields here
         }
 
@@ -47,6 +67,16 @@ public class MyProfileFragment extends Fragment {
                Profile newProfile = new Profile();
                newProfile.name = editTextname.getText().toString();
                newProfile.nickname = editTextNickname.getText().toString();
+               newProfile.gender = spinnerGender.getSelectedItem().toString();
+               /*newProfile.schoolName = editTextSchoolName.getText().toString();
+               newProfile.firstChoice = editTextFirstChoice.getText().toString();
+               newProfile.secondChoice = editTextSecondChoice.getText().toString();
+               newProfile.thirdChoice = editTextThirdChoice.getText().toString();
+               newProfile.interest1 = editTextInterest1.getText().toString();
+               newProfile.interest2 = editTextInterest2.getText().toString();
+               newProfile.interest3 = editTextInterest3.getText().toString();
+               newProfile.interest4 = editTextInterest4.getText().toString();
+               newProfile.email = editTextEmail.getText().toString();*/
                // ... set more fields here
                db.profileDao().delete();            // delete existing profile
                db.profileDao().insert(newProfile);  // insert new profile

@@ -18,7 +18,6 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textViewName"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="name" />
@@ -41,7 +40,6 @@
             android:text="Nickame" />
 
         <EditText
-            android:id="@+id/editTextNickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nickname" />
@@ -58,7 +56,6 @@
             android:text="Gender" />
 
         <Spinner
-            android:id="@+id/spinnerGender"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:entries="@array/gender_list"
@@ -77,7 +74,6 @@
             android:text="School Name" />
 
         <EditText
-            android:id="@+id/editTextSchoolName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="7"
@@ -273,7 +269,6 @@
             android:text="Edit my plofile" />
 
         <Button
-            android:id="@+id/Button_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton01"
