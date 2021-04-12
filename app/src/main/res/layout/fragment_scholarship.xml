@@ -8,11 +8,11 @@
     android:background="@color/オイスターホワイト">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/washihana"
+        android:src="@drawable/sakurahaikei"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

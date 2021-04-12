@@ -7,6 +7,15 @@
     android:background="@color/オイスターホワイト">
 
 
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sakurahaikei" />
+
     <TextView
         android:id="@+id/textView_settings_notificaiton_change_mail_address"
         android:layout_width="wrap_content"
