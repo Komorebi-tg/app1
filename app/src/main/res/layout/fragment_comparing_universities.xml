@@ -7,7 +7,7 @@
     tools:context=".AboutUniversityFragment">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
