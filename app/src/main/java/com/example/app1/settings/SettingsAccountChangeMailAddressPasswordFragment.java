@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +16,9 @@ public class SettingsAccountChangeMailAddressPasswordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_settings_account_change_mail_address_password, container, false);
+        View view = inflater.inflate(R.layout.fragment_settings_account_change_mail_address_password, container, false);
+        Button change = view.findViewById(R.id.button_settings_account_change_mail_address_do);
+
+        return view;
     }
 }
