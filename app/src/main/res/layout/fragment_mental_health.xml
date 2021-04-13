@@ -8,15 +8,16 @@
 
 
     <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/sakurahaikei" />
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sakurahaikei"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
@@ -42,7 +43,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent">
+       app:layout_constraintTop_toTopOf="@+id/textView11">
 
         <SearchView
             android:layout_width="280dp"
@@ -62,6 +63,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -73,8 +75,9 @@
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="200dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/app1_mental_health_example1_2" />
@@ -84,10 +87,92 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="Button"
+            android:text="勉強と睡眠"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト" />
 
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/スノーホワイト"
+            android:onClick="onClickButton31"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bennkyouinngaku"
+            tools:ignore="DuplicateIds,OnClick" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButton31"
+            android:text="勉強用音楽"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト"
+            tools:ignore="DuplicateIds,OnClick" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginright="32dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/Widget"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@color/スノーホワイト"
+            android:onClick="onClickButton31"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hottkaidouniversity"
+            app:srcCompat="@drawable/benkyoustress"
+            tools:ignore="MissingConstraints,OnClick" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButton31"
+            android:text="ストレス解消"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト"
+            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton31"
+        android:text="勉強のお供に"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/スノーホワイト"
+        tools:ignore="DuplicateIds,MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="544dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@color/スノーホワイト"
+        android:onClick="onClickButton31"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/benkyouokashi"
+        tools:ignore="DuplicateIds,MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="383dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
