@@ -18,6 +18,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/sakurahaikei" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/MentalHealth"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
@@ -30,7 +42,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+       app:layout_constraintTop_toTopOf="parent">
 
         <SearchView
             android:layout_width="280dp"
@@ -72,7 +84,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="Button" />
+            android:text="Button"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト" />
 
     </LinearLayout>
 
