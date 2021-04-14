@@ -125,6 +125,21 @@ public class MainActivity extends AppCompatActivity {
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_settings));
     }
 
+    public void onClickButton5(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversitySavedFragment()).commit();
+    }
+
+    public void onClickButton6(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipSavedFragment()).commit();
+    }
+
+    public void onClickButton7(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthSavedFragment()).commit();
+    }
+
+    public void onClickButton8(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivitySavedFragment()).commit();
+    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

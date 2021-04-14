@@ -9,12 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class MyProfileDisplayFragment extends Fragment {
+public class ActivitySavedFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_profile_display, container, false);
-
-
+        return inflater.inflate(R.layout.fragment_activity_saved, container, false);
     }
 }
