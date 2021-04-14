@@ -101,6 +101,12 @@
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="OnClick" />
 
+        <Switch
+            android:id="@+id/switch10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="160dp"
@@ -121,6 +127,12 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,OnClick" />
+
+        <Switch
+            android:id="@+id/switch11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
 
     </LinearLayout>
 
@@ -160,6 +172,12 @@
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
+        <Switch
+            android:id="@+id/switch12"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="160dp"
@@ -180,6 +198,12 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+
+        <Switch
+            android:id="@+id/switch13"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
