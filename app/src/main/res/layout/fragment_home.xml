@@ -160,7 +160,7 @@
         android:id="@+id/button_setting"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/frame_style"
         android:onClick="onClickButton9"
         android:text="@string/Setting"
@@ -176,7 +176,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Saved"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -189,24 +189,26 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="170dp"
         android:text="Search"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button_scholarships"
         app:layout_constraintEnd_toEndOf="@+id/button_scholarships"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="@+id/button_university"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/whay2"
+        tools:layout_editor_absoluteY="43dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
