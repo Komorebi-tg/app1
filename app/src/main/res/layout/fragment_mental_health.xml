@@ -120,7 +120,7 @@
         android:layout_marginStart="228dp"
         android:layout_marginLeft="228dp"
         android:layout_marginTop="32dp"
-        android:layout_marginright="32dp"
+        android:layout_marginRight="32dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
@@ -149,30 +149,26 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@color/スノーホワイト"
+            android:onClick="onClickButton31"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/benkyouokashi"
+            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButton31"
+            android:text="勉強のお供に"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト"
+            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickButton31"
-        android:text="勉強のお供に"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/スノーホワイト"
-        tools:ignore="DuplicateIds,MissingConstraints,OnClick"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="544dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:background="@color/スノーホワイト"
-        android:onClick="onClickButton31"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/benkyouokashi"
-        tools:ignore="DuplicateIds,MissingConstraints,OnClick"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="383dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
