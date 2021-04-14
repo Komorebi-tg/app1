@@ -19,7 +19,7 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_settings_account_change_mail_address, container, false);
         Button change = view.findViewById(R.id.button_settings_account_change_mail_address_do);
 
-        change.setOnClickListener(new );
+        //change.setOnClickListener(new );
 
         return view;
 

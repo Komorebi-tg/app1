@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,10 +22,10 @@ public class MyProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_my_profile, container, false);
         EditText editTextname = view.findViewById(R.id.editTextName);
         EditText editTextNickname = view.findViewById(R.id.editTextNickname);
-        Spinner spinnerGender = view.findViewById(R.id.spinnerGender);
-        EditText editTextSchoolName = view.findViewById(R.id.editTextSchoolName);
-        /*EditText editTextFirstChoice = view.findViewById(R.id.editTextFirstChoice);
-        EditText editTextSecondChoice = view.findViewById(R.id.editTextSecondChoice);
+        //Spinner spinnerGender = view.findViewById(R.id.spinnerGender);
+        //EditText editTextSchoolName = view.findViewById(R.id.editTextSchoolName);
+        //EditText editTextFirstChoice = view.findViewById(R.id.editTextFirstChoice);
+        /*EditText editTextSecondChoice = view.findViewById(R.id.editTextSecondChoice);
         EditText editTextThirdChoice = view.findViewById(R.id.editTextThirdChoice);
         EditText editTextInterest1 = view.findViewById(R.id.editTextInterest1);
         EditText editTextInterest2 = view.findViewById(R.id.editTextInterest2);
@@ -39,6 +38,7 @@ public class MyProfileFragment extends Fragment {
         // Initialize profile view from database contents.
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                              .allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
                              .build();
         Profile profile = db.profileDao().getProfile();
         if (profile != null && profile.name != null) {
@@ -46,11 +46,11 @@ public class MyProfileFragment extends Fragment {
             editTextNickname.setText(profile.nickname);
             //spinnerGender.getSelectedItem(profile.gender);
             //profile.index_gender = spinnerGender.getSelectedItemPosition();
-            // spinnerGender.setSelection(profile.index_gender);
-            profile.gender = spinnerGender.getSelectedItem().toString();
-            editTextSchoolName.setText(profile.schoolName);
-            /*editTextFirstChoice.setText(profile.firstChoice);
-            editTextSecondChoice.setText(profile.secondChoice);
+            //spinnerGender.setSelection(profile.index_gender);
+            //profile.gender = spinnerGender.getSelectedItem().toString();
+            //editTextSchoolName.setText(profile.schoolName);
+            //editTextFirstChoice.setText(profile.firstChoice);
+            /*editTextSecondChoice.setText(profile.secondChoice);
             editTextThirdChoice.setText(profile.thirdChoice);
             editTextInterest1.setText(profile.interest1);
             editTextInterest2.setText(profile.interest2);
@@ -67,10 +67,10 @@ public class MyProfileFragment extends Fragment {
                Profile newProfile = new Profile();
                newProfile.name = editTextname.getText().toString();
                newProfile.nickname = editTextNickname.getText().toString();
-               newProfile.gender = spinnerGender.getSelectedItem().toString();
-               /*newProfile.schoolName = editTextSchoolName.getText().toString();
-               newProfile.firstChoice = editTextFirstChoice.getText().toString();
-               newProfile.secondChoice = editTextSecondChoice.getText().toString();
+               //newProfile.gender = spinnerGender.getSelectedItem().toString();
+               //newProfile.schoolName = editTextSchoolName.getText().toString();
+               //newProfile.firstChoice = editTextFirstChoice.getText().toString();
+               /*newProfile.secondChoice = editTextSecondChoice.getText().toString();
                newProfile.thirdChoice = editTextThirdChoice.getText().toString();
                newProfile.interest1 = editTextInterest1.getText().toString();
                newProfile.interest2 = editTextInterest2.getText().toString();

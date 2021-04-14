@@ -10,10 +10,10 @@ public class Profile {
     public String name;
     public String nickname;
     public String gender;
-    public String schoolName;
-    // public Integer index_gender;
-    /*public String firstChoice;
-    public String secondChoice;
+    //public String schoolName;
+    //public Integer index_gender;
+    //public String firstChoice;
+    /*public String secondChoice;
     public String thirdChoice;
     public String interest1;
     public String interest2;
