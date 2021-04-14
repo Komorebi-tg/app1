@@ -151,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.nav_search:
-                            selectedFragment = new SearchFragment();
-                            break;
                         case R.id.nav_settings:
                             selectedFragment = new SettingsFragment();
                             break;
