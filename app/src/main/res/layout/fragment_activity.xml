@@ -93,9 +93,9 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="58dp"
             android:onClick="onClickButton31"
-            android:text="高校生ロボコン"
+            android:text="ときめきロボコン2021!"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="OnClick" />
@@ -171,7 +171,7 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="サマーキャンプ"
+            android:text="English Summer Camp"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
