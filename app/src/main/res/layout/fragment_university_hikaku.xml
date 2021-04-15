@@ -27,6 +27,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        android:onClick="onClickButton23"
         android:src="@drawable/ic_baseline_compare_arrows_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -83,8 +84,9 @@
         android:text="東京大学　文科2類"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
 
     <TextView
         android:id="@+id/textView16"
