@@ -94,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/scholarshipschool"
+                android:src="@drawable/scholarshipgattkou"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 android:layout_marginTop="8dp"/>
 
