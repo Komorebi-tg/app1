@@ -87,7 +87,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/activitykenkyu"
+            app:srcCompat="@drawable/activityrobocon"
             tools:ignore="OnClick" />
 
         <Button
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="高校生研究コンペ"
+            android:text="高校生ロボコン"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="OnClick" />
