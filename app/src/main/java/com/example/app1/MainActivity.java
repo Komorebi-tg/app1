@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickButton1(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversityFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversitiesFragment()).commit();
     }
 
     public void onClickButton21(View view) {
@@ -81,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_mental_health);
         navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_mental_health));
+    }
+
+    public void onClickButton32(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthCreatePostFragment()).commit();
     }
 
     public void onClickButton31(View view) {

@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ComparingUniversitiesFragment extends Fragment {
+public class AboutUniversitiesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_comparing_universities, container, false);
+        return inflater.inflate(R.layout.fragment_about_universities, container, false);
     }
 }
