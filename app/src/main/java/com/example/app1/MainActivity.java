@@ -71,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversitiesCreatePostFragment()).commit();
     }
 
+    public void onClickButton23(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversitySavedFragment()).commit();
+    }
+
+    public void onClickButton24(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityHikakuFragment()).commit();
+    }
+
     public void onClickButton0(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_my_profile);
