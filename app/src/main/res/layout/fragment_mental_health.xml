@@ -118,7 +118,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/bennkyouinngaku"
+            app:srcCompat="@drawable/menatalhealthokashi"
             tools:ignore="DuplicateIds,OnClick" />
 
         <Button
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="勉強用音楽"
+            android:text="勉強のお供に"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,OnClick" />
@@ -161,7 +161,7 @@
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             android:src="@drawable/hottkaidouniversity"
-            app:srcCompat="@drawable/benkyoustress"
+            app:srcCompat="@drawable/mentalhealthstress"
             tools:ignore="MissingConstraints,OnClick" />
 
         <Button
@@ -188,7 +188,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/benkyouokashi"
+            app:srcCompat="@drawable/mentalhealthstudymusic"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
         <Button
@@ -196,7 +196,7 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="勉強のお供に"
+            android:text="集中のための音楽"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
