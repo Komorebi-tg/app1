@@ -139,12 +139,24 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipCreatePostFragment()).commit();
     }
 
+    public void onClickButton2221(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipsexampleFragment()).commit();
+    }
+
+    public void onClickButton2222(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Scholarshipsexample2Fragment()).commit();
+    }
+
     public void onClickButton4(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivityFragment()).commit();
     }
 
     public void onClickButton41(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivitiesCreatePostFragment()).commit();
+    }
+
+    public void onClickButton42(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivityExampleFragment()).commit();
     }
 
     public void onClickButton9(View view) {
