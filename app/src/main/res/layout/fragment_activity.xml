@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScholarshipFragment"
-    android:background="@color/オイスターホワイト">
+    tools:context=".ScholarshipFragment">
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/sakurahaikei"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +87,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/acitvityvolunteer"
+            app:srcCompat="@drawable/activityrobocon"
             tools:ignore="OnClick" />
 
         <Button
@@ -96,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="清掃ボランティア"
+            android:text="高校生ロボコン"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="OnClick" />
@@ -191,7 +190,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/activitykenkyu"
+            app:srcCompat="@drawable/acitvityvolunteer"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
         <Button
@@ -199,7 +198,7 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:onClick="onClickButton31"
-            android:text="実験してみよう"
+            android:text="街をきれいに！！"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />

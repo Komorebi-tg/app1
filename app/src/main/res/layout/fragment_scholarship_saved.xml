@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScholarshipFragment"
-    android:background="@color/オイスターホワイト">
+    tools:context=".ScholarshipFragment">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/sakurahaikei"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,5 +40,31 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@color/スノーホワイト"
+        android:onClick="onClickButton31"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/scholarshipschool"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton31"
+        android:text="学校奨学金"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/スノーホワイト"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="279dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
