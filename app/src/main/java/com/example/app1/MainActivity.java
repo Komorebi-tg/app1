@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversityFragment()).commit();
     }
 
+    public void onClickButton21(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
+    }
+
     public void onClickButton0(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_my_profile);
@@ -140,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickButton8(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivitySavedFragment()).commit();
     }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
