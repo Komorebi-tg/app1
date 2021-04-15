@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Post {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public long uid;
     public String category;  // university, scholarships, mental_health, activity
     public String body;

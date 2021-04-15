@@ -55,7 +55,7 @@
             android:gravity="start|top"
             android:hint="Write your body text here"
             android:inputType="textMultiLine"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/black" />
     </ScrollView>
 
     <Button
