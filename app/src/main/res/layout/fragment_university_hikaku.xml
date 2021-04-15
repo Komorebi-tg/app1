@@ -81,9 +81,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="東京大学　文科2類"
+        android:text="東京大学 文科2類"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
@@ -98,6 +98,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="[一般選抜]"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -111,7 +113,81 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="・共通テスト 国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
+        android:text="・共通テスト
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -125,7 +201,80 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="・個別二次試験 英語 国語  数学 社会2科目(日本史 世界史 地理) "
+        android:text="・個別二次試験
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        英語 国語  数学 社会2科目(日本史 世界史 地理) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -135,9 +284,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="一橋大学　経済学部"
+        android:text="一橋大学 経済学部"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -152,6 +301,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="[一般選抜]"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -165,7 +316,81 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="・共通テスト             国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
+        android:text="・共通テスト
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -179,7 +404,77 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="・個別二次試験 英語 国語 数学 社会1科目 (日本史 世界史 地理)"
+        android:text="・個別二次試験
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        英語 国語 数学 社会1科目 (日本史 世界史 地理)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />

@@ -47,11 +47,12 @@
         android:layout_height="160dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
         android:background="@color/スノーホワイト"
         android:onClick="onClickButton31"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/scholarshipschool"
+        app:srcCompat="@drawable/scholarshipgattkou"
         tools:ignore="MissingConstraints,OnClick"
         tools:layout_editor_absoluteY="119dp" />
 
@@ -60,11 +61,40 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:onClick="onClickButton31"
-        android:text="学校奨学金"
+        android:text="公共財団法人ベアー奨学会"
         android:textColor="@color/black"
         app:backgroundTint="@color/スノーホワイト"
         tools:ignore="MissingConstraints,OnClick"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="279dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/スノーホワイト"
+        android:onClick="onClickButton31"
+        android:scaleType="fitCenter"
+        android:src="@drawable/test_print_mondaiyoushi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:onClick="onClickButton31"
+        android:text="のりしお育英会"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
