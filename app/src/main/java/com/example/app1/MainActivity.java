@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
     }
 
+    public void onClickButton22(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversitiesCreatePostFragment()).commit();
+    }
+
     public void onClickButton0(View view) {
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.nav_my_profile);
@@ -123,8 +127,16 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipFragment()).commit();
     }
 
+    public void onClickButton222(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScholarshipCreatePostFragment()).commit();
+    }
+
     public void onClickButton4(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivityFragment()).commit();
+    }
+
+    public void onClickButton41(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivitiesCreatePostFragment()).commit();
     }
 
     public void onClickButton9(View view) {

@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sholarship_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScholarshipFragment"
-    android:background="@color/オイスターホワイト">
+    android:background="@color/オイスターホワイト"
+    tools:context=".ScholarshipFragment">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -60,6 +61,15 @@
             app:backgroundTint="@color/スノーホワイト" />
 
     </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sholarships_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -195,4 +205,19 @@
             android:layout_height="wrap_content"
             android:text="Save" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onClickButton222"
+        android:text="Create Post"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
