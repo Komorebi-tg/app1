@@ -51,7 +51,7 @@
         android:onClick="onClickButton31"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/scholarshipschool"
+        app:srcCompat="@drawable/scholarshipgattkou"
         tools:ignore="MissingConstraints,OnClick"
         tools:layout_editor_absoluteY="119dp" />
 
