@@ -93,7 +93,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/app1_mental_health_example1_2" />
+            app:srcCompat="@drawable/mentalhealthsuiminn" />
 
         <Button
             android:id="@+id/button5"

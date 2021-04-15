@@ -77,7 +77,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/scholarshipschool"
+            app:srcCompat="@drawable/scholarshipgattkou"
             tools:ignore="DuplicateIds,OnClick" />
 
         <Button
@@ -175,7 +175,7 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton31"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/scholarshipryugaku"
+            app:srcCompat="@drawable/scholarshipabroad"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
         <Button
