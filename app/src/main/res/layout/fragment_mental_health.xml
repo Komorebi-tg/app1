@@ -68,8 +68,12 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout10"
@@ -100,6 +104,12 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト" />
 
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="160dp"
@@ -121,6 +131,12 @@
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,OnClick" />
 
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -129,7 +145,6 @@
         android:layout_marginStart="228dp"
         android:layout_marginLeft="228dp"
         android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
@@ -159,6 +174,12 @@
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="160dp"
@@ -179,6 +200,27 @@
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onClickButton32"
+        android:text="Create Post"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

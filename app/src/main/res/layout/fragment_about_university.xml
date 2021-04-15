@@ -60,16 +60,31 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/ic_baseline_compare_arrows_24"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/tokyouniversity" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButton21"
+            android:text="東京大学　工学部"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
