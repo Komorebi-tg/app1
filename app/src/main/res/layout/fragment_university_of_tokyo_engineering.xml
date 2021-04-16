@@ -71,6 +71,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -101,16 +102,12 @@
                         android:layout_marginRight="15dp"
                         app:srcCompat="@drawable/toudai" />
 
-
-                    //大学名
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="東京大学 文科2類"
                         android:textColor="@color/black"
                         android:textSize="30dp" />
-                    //大学の特色
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -125,7 +122,6 @@
                         android:text="この大学は〜"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
-                    //場所
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -232,7 +228,6 @@
                             android:textColor="@color/black"
                             android:textSize="10dp" />
                     </TableRow>
-                    //2020年度
 
                     <TableRow>
 
@@ -272,7 +267,6 @@
                             android:text="1147(32)"
                             android:textColor="@color/black" />
                     </TableRow>
-                    //2019年度
 
                     <TableRow>
 
@@ -312,7 +306,6 @@
                             android:text="1154(29)"
                             android:textColor="@color/black" />
                     </TableRow>
-                    //2018年度
 
                     <TableRow>
 
@@ -352,7 +345,6 @@
                             android:text="1152(27)"
                             android:textColor="@color/black" />
                     </TableRow>
-                    //2017年度
 
                     <TableRow>
 

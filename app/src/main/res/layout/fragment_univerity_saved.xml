@@ -25,7 +25,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
         android:onClick="onClickButton24"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_compare_arrows_24"
         tools:ignore="OnClick" />
@@ -46,77 +46,12 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
         android:text="saved posts"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="52dp"
-        android:background="@color/スノーホワイト"
-        android:onClick="onClickButton31"
-        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/tokyouniversity"
-        tools:ignore="MissingConstraints,OnClick" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="4dp"
-        android:onClick="onClickButton31"
-        android:text="東京大学 文科2類"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/スノーホワイト"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        tools:ignore="MissingConstraints,OnClick" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="224dp"
-        android:layout_marginLeft="224dp"
-        android:layout_marginTop="52dp"
-        android:background="@color/スノーホワイト"
-        android:onClick="onClickButton31"
-        android:scaleType="fitCenter"
-        android:src="@drawable/hitotsubashiuniversity"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:ignore="OnClick" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginLeft="224dp"
-        android:layout_marginTop="4dp"
-        android:onClick="onClickButton31"
-        android:text="一橋大学 経済学部"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/スノーホワイト"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -125,9 +60,96 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="52dp"
+                    android:background="@color/スノーホワイト"
+                    android:onClick="onClickButton31"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:srcCompat="@drawable/tokyouniversity"
+                    tools:ignore="MissingConstraints,OnClick" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:onClick="onClickButton31"
+                    android:text="東京大学 文科2類"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/スノーホワイト"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+                    tools:ignore="MissingConstraints,OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/スノーホワイト"
+                    android:onClick="onClickButton31"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hitotsubashiuniversity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:onClick="onClickButton31"
+                    android:text="一橋大学 経済学部"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/スノーホワイト"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+                    tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </ScrollView>
 
