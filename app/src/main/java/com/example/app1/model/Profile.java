@@ -13,12 +13,12 @@ public class Profile {
     //public String schoolName;
     //public Integer index_gender;
     //public String firstChoice;
-    /*public String secondChoice;
+    public String secondChoice;
     public String thirdChoice;
     public String interest1;
     public String interest2;
     public String interest3;
     public String interest4;
-    public String email;*/
+    public String email;
     // ... add more fields here
 }
