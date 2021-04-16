@@ -22,5 +22,6 @@ public class Profile {
     public String interest3;
     public String interest4;
     public String email;
+    public String phoneNumber;
     // ... add more fields here
 }
