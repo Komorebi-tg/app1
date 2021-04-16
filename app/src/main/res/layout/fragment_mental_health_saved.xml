@@ -47,24 +47,37 @@
         android:layout_height="160dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
         android:background="@color/スノーホワイト"
         android:onClick="onClickButton31"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@drawable/mentalhealthsuiminn"
-        tools:ignore="MissingConstraints,OnClick"
-        tools:layout_editor_absoluteY="119dp" />
+        tools:ignore="MissingConstraints,OnClick" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:onClick="onClickButton31"
         android:text="睡眠は大事！？"
         android:textColor="@color/black"
         app:backgroundTint="@color/スノーホワイト"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
         tools:ignore="MissingConstraints,OnClick"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
