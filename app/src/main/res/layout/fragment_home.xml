@@ -215,7 +215,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView9"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/top" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
