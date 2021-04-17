@@ -36,7 +36,8 @@ public class MentalHealthFragment extends Fragment {
             // Fill in the examples;
             Post post1 = new Post();
             post1.category = "mental_health";
-            post1.title = "title1";
+            post1.title = "睡眠は大事！？";
+            post1.subtitle = "subtitle";
             post1.body = "body1";
             post1.image = "mentalhealthsuiminn";
             db.postDao().insert(post1);
