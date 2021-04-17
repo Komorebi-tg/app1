@@ -9,6 +9,7 @@ public class Post {
     public long uid;
     public String category;  // university, scholarships, mental_health, activity
     public String title;
+    public String subtitle;
     public String body;
     public String image;
 }
