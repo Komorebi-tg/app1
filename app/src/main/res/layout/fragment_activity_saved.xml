@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:onClick="onClickButton31"
-        android:text="高校生ロボコン"
+        android:text="ときめきロボコン2021!"
         android:textColor="@color/black"
         app:backgroundTint="@color/スノーホワイト"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
