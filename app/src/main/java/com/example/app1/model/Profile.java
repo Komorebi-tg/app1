@@ -23,5 +23,6 @@ public class Profile {
     public String interest4;
     public String email;
     public String phoneNumber;
+    public String password;
     // ... add more fields here
 }

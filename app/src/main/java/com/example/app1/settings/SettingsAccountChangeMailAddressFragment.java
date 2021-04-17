@@ -57,12 +57,16 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
+                /*
                 if (mailaddress == profile.email) {
                     //getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
                     message.setText("Correct");
                 } else {
                     message.setText("Incorrect");
                 }
+
+                 */
             }
         });
 
