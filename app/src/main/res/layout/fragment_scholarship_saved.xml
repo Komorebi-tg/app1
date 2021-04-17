@@ -31,18 +31,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="saved posts"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:text="Saved Posts"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageButton
         android:id="@+id/imageButton4"
