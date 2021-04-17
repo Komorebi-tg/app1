@@ -61,7 +61,7 @@
             app:backgroundTint="@color/スノーホワイト" />
 
     </LinearLayout>
-
+<!--
     <ScrollView
         android:id="@+id/mental_health_scroll"
         android:layout_width="match_parent"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.0">
 
     </ScrollView>
-<!--
+
     <LinearLayout
         android:id="@+id/linearLayout10"
         android:layout_width="wrap_content"
@@ -116,7 +116,6 @@
             android:layout_height="160dp"
             android:layout_marginTop="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/menatalhealthokashi"
             tools:ignore="DuplicateIds,OnClick" />
@@ -157,7 +156,6 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             android:src="@drawable/hottkaidouniversity"
             app:srcCompat="@drawable/mentalhealthstress"
@@ -184,7 +182,6 @@
             android:layout_height="160dp"
             android:layout_marginTop="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/mentalhealthstudymusic"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
@@ -206,6 +203,7 @@
 
     </LinearLayout>
 -->
+    <!--
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
@@ -219,5 +217,6 @@
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

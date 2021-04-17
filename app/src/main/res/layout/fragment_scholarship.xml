@@ -86,7 +86,7 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
+            android:onClick="onClickButton2221"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/scholarshipschool"
             tools:ignore="DuplicateIds,OnClick" />
@@ -113,7 +113,6 @@
             android:layout_height="160dp"
             android:layout_marginTop="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/scholarshipjyuku"
             tools:ignore="DuplicateIds,OnClick" />
@@ -155,7 +154,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
+            android:onClick="onClickButton2222"
             android:scaleType="fitCenter"
             android:src="@drawable/hottkaidouniversity"
             app:srcCompat="@drawable/test_print_mondaiyoushi"
@@ -183,7 +182,6 @@
             android:layout_height="160dp"
             android:layout_marginTop="32dp"
             android:background="@color/スノーホワイト"
-            android:onClick="onClickButton31"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/scholarshipryugaku"
             tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
@@ -204,6 +202,7 @@
             android:text="Save" />
     </LinearLayout>
 
+    <!--
     <Button
         android:id="@+id/button11"
         android:layout_width="wrap_content"
@@ -217,5 +216,6 @@
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
