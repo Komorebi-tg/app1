@@ -115,12 +115,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="156dp"
                 android:text="　東京大学のOOO教授の研究結果によると、毎日同じ時間に就寝するのがもっとも効率的に生産力を上げることができるようです。以下がその研究データで、毎日同じ時間帯に就寝した人とバラバラの時間帯に就寝した人の集中力の持続時間は1セット平均30分以上も変わってくるようです。またデータ2にもあるように勉強時間自体も1週間で3時間ほどの差が生じることも明らかになりました。"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textColor="@color/black" />
 
 
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
