@@ -81,7 +81,6 @@
             android:id="@+id/button_settings_account_change_mail_address_do"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickButton1121"
             android:text="@string/DoChangeMailAddress"
             android:textColor="@color/black"
             app:backgroundTint="@color/スノーホワイト" />
