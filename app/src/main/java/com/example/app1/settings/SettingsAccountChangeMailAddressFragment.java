@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,6 +25,28 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
         Button change = view.findViewById(R.id.button_settings_account_change_mail_address_do);
         EditText editTextmailaddress = view.findViewById(R.id.editTextTextEmailAddress2);
         String mailaddress = editTextmailaddress.getText().toString();
+        TextView message = view.findViewById(R.id.message);
+
+
+        /*
+        // Alerts Dialogue
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.positive)
+                .setTitle(R.string.positive)
+                .setPositiveButton(R.string.positive, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .setNegativeButton(R.string.negative, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+        //end
+         */
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                 .allowMainThreadQueries()
@@ -31,12 +54,14 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
                 .build();
         Profile profile = db.profileDao().getProfile();
 
-        //I don't get why this doesn't work properly
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mailaddress == profile.email) {
-                    getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
+                    //getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
+                    message.setText("Correct");
+                } else {
+                    message.setText("Incorrect");
                 }
             }
         });
