@@ -87,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:text="公共財団法人ベアー奨学会"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/image"
@@ -98,7 +99,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 android:layout_marginTop="8dp"/>
 
-            <TextView
+            hy<TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="対象・・・公立高校出身の大学生"

@@ -65,7 +65,8 @@
                     android:id="@+id/textViewName"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="name" />
+                    android:text="Name"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextName"
@@ -82,7 +83,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Nickame" />
+                    android:text="Nickame"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextNickname"
@@ -99,7 +101,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Gender" />
+                    android:text="Gender"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextGender"
@@ -120,7 +123,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="School Name" />
+                    android:text="School Name"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextSchoolName"
@@ -138,7 +142,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Grade" />
+                    android:text="Grade"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextGrade"
@@ -156,7 +161,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Birth Date" />
+                    android:text="Birth Date"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextBirthDate"
@@ -175,7 +181,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="第一志望校" />
+                    android:text="第一志望校"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextFirstChoice"
@@ -193,7 +200,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="第二志望校" />
+                    android:text="第二志望校"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextSecondChoice"
@@ -211,7 +219,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="第三志望校" />
+                    android:text="第三志望校"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextThirdChoice"
@@ -229,7 +238,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Interest ①" />
+                    android:text="Interest ①"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextInterest1"
@@ -247,7 +257,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Interest ②" />
+                    android:text="Interest ②"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextInterest2"
@@ -265,7 +276,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Interest ③" />
+                    android:text="Interest ③"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextInterest3"
@@ -283,7 +295,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Interest ④" />
+                    android:text="Interest ④"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextInterest4"
@@ -301,7 +314,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Mail Adress" />
+                    android:text="Mail Adress"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextEmail"
@@ -319,7 +333,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Phone Number" />
+                    android:text="Phone Number"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextPhone"
@@ -337,7 +352,8 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Save my plofile" />
+                    android:text="Save my plofile"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/Button_save"
