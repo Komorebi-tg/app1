@@ -5,26 +5,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.room.Room;
 
 import com.example.app1.R;
+import com.example.app1.dao.AppDatabase;
 
 public class SettingsAccountChangePasswordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_settings_account, container, false);
+        View view = inflater.inflate(R.layout.fragment_settings_account_change_password, container, false);
         Button change = view.findViewById(R.id.button_settings_account_change_password_change);
-        /*EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
+        EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
         EditText editTextNewPassword = view.findViewById(R.id.editTextTextPassword_new_password);
         EditText editTextNewPasswordConfirm = view.findViewById(R.id.editTextTextPassword_new_password_confirmation);
         String currentPassword = editTextCurrentPassword.getText().toString();
         Button buttonSettingsAccountChangePasswordChange = view.findViewById(R.id.button_settings_account_change_password_change);
 
-         */
+        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
 
         //buttonSettingsAccountChangePasswordChangeが押されたときのアクション
         /*buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {
