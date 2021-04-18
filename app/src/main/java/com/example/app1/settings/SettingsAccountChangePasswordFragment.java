@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +15,7 @@ import androidx.room.Room;
 
 import com.example.app1.R;
 import com.example.app1.dao.AppDatabase;
+import com.example.app1.model.Profile;
 
 public class SettingsAccountChangePasswordFragment extends Fragment {
     @Nullable
@@ -24,33 +26,42 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
         EditText editTextCurrentPassword = view.findViewById(R.id.editTextPassword_current_password);
         EditText editTextNewPassword = view.findViewById(R.id.editTextTextPassword_new_password);
         EditText editTextNewPasswordConfirm = view.findViewById(R.id.editTextTextPassword_new_password_confirmation);
-        String currentPassword = editTextCurrentPassword.getText().toString();
         Button buttonSettingsAccountChangePasswordChange = view.findViewById(R.id.button_settings_account_change_password_change);
+        TextView message = view.findViewById(R.id.textView22);
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                 .allowMainThreadQueries()
                 .fallbackToDestructiveMigration()
                 .build();
+        Profile profile = db.profileDao().getProfile();
 
         //buttonSettingsAccountChangePasswordChangeが押されたときのアクション
-        /*buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {
+        buttonSettingsAccountChangePasswordChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (currentPassword == BasicProfilePassword) {
-                    if (editTextNewPassword == editTextNewPasswordConfirm) {
-                        //process the button action
+                String currentP = editTextCurrentPassword.getText().toString();
+                String newP = editTextNewPassword.getText().toString();
+                String newPC = editTextNewPasswordConfirm.getText().toString();
+                if (currentP == profile.password) {
+                    if (newP == newPC) {
+                        Profile newProfile = new Profile();
+                        newProfile.password = newP;
+                        db.profileDao().insert(newProfile);  // insert new profile
+                        message.setText("Password has been changed successfully");
                     }
                     else {
                         //display "New passwords don't match"
+                        message.setText("New passwords doesn't match");
                     }
                     }
                 else {
                     //display "Incorrect current password"
+                    message.setText("Incorrect Current Password");
                 }
             }
         });
 
-         */
+
 
         return view;
 

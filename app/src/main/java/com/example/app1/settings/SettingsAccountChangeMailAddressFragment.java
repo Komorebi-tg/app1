@@ -24,8 +24,38 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_settings_account_change_mail_address, container, false);
         Button change = view.findViewById(R.id.button_settings_account_change_mail_address_do);
         EditText editTextmailaddress = view.findViewById(R.id.editTextTextEmailAddress2);
-        String mailaddress = editTextmailaddress.getText().toString();
+        EditText editTextpassword = view.findViewById(R.id.editTextPassword);
         TextView message = view.findViewById(R.id.message);
+
+        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+        Profile profile = db.profileDao().getProfile();
+
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String mailaddress = editTextmailaddress.getText().toString();
+                String password = editTextpassword.getText().toString();
+                if (mailaddress == profile.email) {
+                    if (password == profile.password) {
+                        getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
+
+                    } else {
+                        message.setText("Incorrect Password");
+                    }
+                } else {
+                    message.setText("Incorrect Mail Address");
+                }
+
+            }
+        });
+
+        return view;
+
+    }
+}
 
 
         /*
@@ -47,30 +77,3 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
                 })
         //end
          */
-
-        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
-                .allowMainThreadQueries()
-                .fallbackToDestructiveMigration()
-                .build();
-        Profile profile = db.profileDao().getProfile();
-
-        change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
-                /*
-                if (mailaddress == profile.email) {
-                    //getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
-                    message.setText("Correct");
-                } else {
-                    message.setText("Incorrect");
-                }
-
-                 */
-            }
-        });
-
-        return view;
-
-    }
-}

@@ -67,7 +67,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="現在のメールアドレスは" />
+            android:text="現在のメールアドレスを入力してください。" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress2"
@@ -75,6 +75,20 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/MailAddress"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="現在のパスワードを入力してください。" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Password"
             android:inputType="textEmailAddress" />
 
         <Button

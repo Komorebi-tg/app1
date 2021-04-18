@@ -22,7 +22,7 @@ public class SettingsAccountChangeMailAddressPasswordFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_settings_account_change_mail_address_password, container, false);
         Button change = view.findViewById(R.id.button_settings_account_change_mail_address_do);
-        TextView textViewpassword = view.findViewById(R.id.editTextPassword);
+        TextView textViewma = view.findViewById(R.id.editTextPassword);
         TextView message = view.findViewById(R.id.textView21);
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
@@ -34,17 +34,21 @@ public class SettingsAccountChangeMailAddressPasswordFragment extends Fragment {
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String password = textViewpassword.getText().toString();
-                if (password == profile.password) {
+                String ma = textViewma.getText().toString();
+                Profile newProfile = new Profile();
+                newProfile.email = ma;
+                db.profileDao().insert(newProfile);  // insert new profile
+                message.setText("Mail Address has been changed successfully");
+                /* if (ma == profile.email) {
                     // Does the below changes every Profile data or just the password?
                     Profile newProfile = new Profile();
-                    newProfile.name = password;
+                    //newProfile.email = email;
                     db.profileDao().insert(newProfile);  // insert new profile
                     message.setText("Mail Address has been changed successfully");
                 } else {
                     message.setText("Incorrect");
                 }
-
+                 */
             }
         });
 
