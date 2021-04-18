@@ -27,6 +27,16 @@ public class ScholarshipFragment extends Fragment implements SearchView.OnQueryT
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_scholarship, container, false);
+        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
+            View writePost = view.findViewById(R.id.button11);
+            if (writePost != null) {
+                writePost.setVisibility(View.INVISIBLE);
+            }
+        }
         displayPosts(view, "scholarship", null);
         SearchView searchView = view.findViewById(R.id.scholarships_search);
         searchView.setOnQueryTextListener(this);

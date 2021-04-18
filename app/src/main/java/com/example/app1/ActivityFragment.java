@@ -28,6 +28,17 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activity, container, false);
+
+        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
+            View writePost = view.findViewById(R.id.button9);
+            if (writePost != null) {
+                writePost.setVisibility(View.INVISIBLE);
+            }
+        }
         displayPosts(view, "activity", null);
         SearchView searchView = view.findViewById(R.id.activity_search);
         searchView.setOnQueryTextListener(this);

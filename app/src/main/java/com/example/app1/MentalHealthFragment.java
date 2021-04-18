@@ -28,6 +28,16 @@ public class MentalHealthFragment extends Fragment implements SearchView.OnQuery
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mental_health, container, false);
+        AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
+            View writePost = view.findViewById(R.id.button8);
+            if (writePost != null) {
+                writePost.setVisibility(View.INVISIBLE);
+            }
+        }
         displayPosts(view, "mental_health", null);
         SearchView searchView = view.findViewById(R.id.mental_health_search);
         searchView.setOnQueryTextListener(this);
