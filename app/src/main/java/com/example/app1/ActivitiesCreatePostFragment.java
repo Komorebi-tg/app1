@@ -21,7 +21,7 @@ public class ActivitiesCreatePostFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activities_create_post, container, false);
 
-        EditText body = view.findViewById(R.id.editTextTextMultiLineCreateActivitiesPost);
+        EditText body = view.findViewById(R.id.editTextTextMultiLineCreateScholarshipsPost);
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                 .allowMainThreadQueries()
