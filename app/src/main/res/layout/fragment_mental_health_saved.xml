@@ -82,4 +82,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.SwitchCompat
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintRight_toRightOf="@+id/button5"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_compat"
+        android:text="Save"
+        android:textSize="10dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
