@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +18,7 @@ import com.example.app1.dao.AppDatabase;
 import com.example.app1.model.Profile;
 
 public class MyProfileFragment extends Fragment {
+    public static String[] grades = {"", "中学１年", "中学２年", "中学３年", "高校１年", "高校２年", "高校３年", "大学以上"};
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -25,7 +28,7 @@ public class MyProfileFragment extends Fragment {
         //Spinner spinnerGender = view.findViewById(R.id.spinnerGender);
         EditText editTextGender = view.findViewById(R.id.editTextGender);
         EditText editTextSchoolName = view.findViewById(R.id.editTextSchoolName);
-        EditText editTextGrade = view.findViewById(R.id.editTextGrade);
+        Spinner editTextGrade = view.findViewById(R.id.editTextGrade);
         EditText editTextBirthDate = view.findViewById(R.id.editTextBirthDate);
         EditText editTextFirstChoice = view.findViewById(R.id.editTextFirstChoice);
         EditText editTextSecondChoice = view.findViewById(R.id.editTextSecondChoice);
@@ -38,7 +41,9 @@ public class MyProfileFragment extends Fragment {
         EditText editTextphoneNumber = view.findViewById(R.id.editTextPhone);
         EditText editTextPassword = view.findViewById(R.id.editTextPassword);
 
-
+        ArrayAdapter aa = new ArrayAdapter(getContext(), android.R.layout.simple_spinner_item, grades);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        editTextGrade.setAdapter(aa);
 
         // Initialize profile view from database contents.
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
@@ -55,7 +60,11 @@ public class MyProfileFragment extends Fragment {
             //profile.gender = spinnerGender.getSelectedItem().toString();
             editTextGender.setText(profile.gender);
             editTextSchoolName.setText(profile.schoolName);
-            editTextGrade.setText(profile.grade);
+            for (int i = 0; i < grades.length; ++i) {
+                if (grades[i].equals(profile.grade)) {
+                    editTextGrade.setSelection(i);
+                }
+            }
             editTextBirthDate.setText(profile.birthDate);
             editTextFirstChoice.setText(profile.firstChoice);
             editTextSecondChoice.setText(profile.secondChoice);
@@ -79,7 +88,9 @@ public class MyProfileFragment extends Fragment {
                //newProfile.gender = spinnerGender.getSelectedItem().toString();
                newProfile.gender = editTextGender.getText().toString();
                newProfile.schoolName = editTextSchoolName.getText().toString();
-               newProfile.grade = editTextGrade.getText().toString();
+               if (editTextGrade.getSelectedItemPosition() >= 0) {
+                   newProfile.grade = grades[editTextGrade.getSelectedItemPosition()];
+               }
                newProfile.birthDate = editTextBirthDate.getText().toString();
                newProfile.firstChoice = editTextFirstChoice.getText().toString();
                newProfile.secondChoice = editTextSecondChoice.getText().toString();
