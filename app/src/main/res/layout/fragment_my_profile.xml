@@ -153,7 +153,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Grade" />
+                    android:hint="Grade"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -172,7 +173,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="YYYY/MM/DD" />
+                    android:hint="YYYY/MM/DD"
+                    android:inputType="text"/>
 
             </LinearLayout>
 
@@ -192,7 +194,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="第一志望校" />
+                    android:hint="第一志望校"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -211,7 +214,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="第二志望校" />
+                    android:hint="第二志望校"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -230,7 +234,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="第三志望校" />
+                    android:hint="第三志望校"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -249,7 +254,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Interest ①" />
+                    android:hint="Interest ①"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -268,7 +274,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Interest ②" />
+                    android:hint="Interest ②"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -287,7 +294,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Interest ③" />
+                    android:hint="Interest ③"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -306,7 +314,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Interest ④" />
+                    android:hint="Interest ④"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -325,7 +334,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Mail Adress" />
+                    android:hint="Mail Address"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -344,7 +354,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Phone Number" />
+                    android:hint="Phone Number"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -363,7 +374,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="Password" />
+                    android:hint="Password"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -374,7 +386,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Save my plofile"
+                    android:text="Save my profile"
                     android:textStyle="bold" />
 
                 <Button

@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
+    @Override
+    public void onBackPressed() {
+        //osaretatokino akusyon
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+    }
+
 
     public void onClickButton1(View view) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversitiesFragment()).commit();
