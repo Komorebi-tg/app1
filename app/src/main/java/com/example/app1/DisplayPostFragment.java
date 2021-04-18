@@ -1,20 +1,17 @@
 package com.example.app1;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.room.Room;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.room.Room;
+
 import com.example.app1.dao.AppDatabase;
 import com.example.app1.model.Post;
-
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -70,6 +67,18 @@ public class DisplayPostFragment extends Fragment {
             ImageView image = view.findViewById(R.id.display_post_image);
             if (image != null && post.image != null) {
                 image.setBackgroundResource(getResources().getIdentifier(post.image, "drawable", "com.example.app1"));
+            }
+            TextView title = view.findViewById(R.id.display_post_title);
+            if (title != null && post.title != null) {
+                title.setText(post.title);
+            }
+            TextView subtitle = view.findViewById(R.id.display_post_subtitle);
+            if (subtitle != null && post.subtitle != null) {
+                title.setText(post.subtitle);
+            }
+            TextView category = view.findViewById(R.id.display_post_category);
+            if (category != null && post.category != null) {
+                category.setText(post.category);
             }
         }
         return view;
