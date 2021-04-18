@@ -42,12 +42,12 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
                 String currentP = editTextCurrentPassword.getText().toString();
                 String newP = editTextNewPassword.getText().toString();
                 String newPC = editTextNewPasswordConfirm.getText().toString();
-                if (currentP == profile.password) {
-                    if (newP == newPC) {
+                if (currentP.equals(profile.password)) {
+                    if (newP.equals(newPC)) {
                         Profile newProfile = new Profile();
                         newProfile.password = newP;
                         db.profileDao().insert(newProfile);  // insert new profile
-                        message.setText("Password has been changed successfully");
+                        message.setText("Password has been changed successfully" );
                     }
                     else {
                         //display "New passwords don't match"

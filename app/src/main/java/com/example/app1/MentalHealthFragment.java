@@ -45,7 +45,6 @@ public class MentalHealthFragment extends Fragment {
         }
 
 
-
         LinearLayout.LayoutParams params =
                 new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(32, 32, 32, 0);
