@@ -207,7 +207,7 @@
     </LinearLayout>
 -->
 
-    <!--
+
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-        -->
+
 
     <ImageButton
         android:id="@+id/imageButton3"
