@@ -64,6 +64,23 @@ public class MentalHealthFragment extends Fragment implements SearchView.OnQuery
                 post1.image = "mentalhealthsuiminn";
                 db.postDao().insert(post1);
                 // add post2, post3, ...
+                Post post2 = new Post();
+                post2.category = "mental_health";
+                post2.title = "勉強のお供に";
+                post2.image = "menatalhealthokashi";
+                db.postDao().insert(post2);
+
+                Post post3 = new Post();
+                post3.category = "mental_health";
+                post3.title = "ストレス解消";
+                post3.image = "mentalhealthstress";
+                db.postDao().insert(post3);
+
+                Post post4 = new Post();
+                post4.category = "mental_health";
+                post4.title = "集中のための音楽";
+                post4.image = "mentalhealthstudymusic";
+                db.postDao().insert(post4);
                 // get the posts again
                 posts = db.postDao().getPosts(category);
             }
