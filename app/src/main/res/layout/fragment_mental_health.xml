@@ -46,6 +46,7 @@
        app:layout_constraintTop_toTopOf="@+id/textView11">
 
         <SearchView
+            android:id="@+id/mental_health_search"
             android:layout_width="280dp"
             android:layout_height="match_parent"
             android:iconifiedByDefault="false"
