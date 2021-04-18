@@ -32,31 +32,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-
-        //tvDate = findViewById(R.id.myProfileDateDisplayBirthDate);
-        //btPickDate = findViewById(R.id.birthDatePickerButton);
-        //btPickDate.setOnClickListener(new View.OnClickListener() {
-            /*@Override
-            public void onClick(View v) {
-                com.example.app1.DatePicker mDatePickerDialogFragment;
-                mDatePickerDialogFragment = new com.example.app1.DatePicker();
-                mDatePickerDialogFragment.show(getSupportFragmentManager(), "DATE PICK");
-            }
-        });
-
-             */
-        }
-
-        /*public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-            Calendar mCalendar = Calendar.getInstance();
-            mCalendar.set(Calendar.YEAR, year);
-            mCalendar.set(Calendar.MONTH, month);
-            mCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-            String selectedDate = DateFormat.getDateInstance(DateFormat.FULL).format(mCalendar.getTime());
-            tvDate.setText(selectedDate);
-        }
-         */
-
+    }
 
 
     public void onClickButton1(View view) {
@@ -199,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new MentalHealthFragment();
                             break;
                         case R.id.nav_my_profile:
+
                             selectedFragment = new MyProfileFragment();
                             break;
                     }
@@ -208,5 +185,27 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
 
-
 }
+
+
+//tvDate = findViewById(R.id.myProfileDateDisplayBirthDate);
+//btPickDate = findViewById(R.id.birthDatePickerButton);
+//btPickDate.setOnClickListener(new View.OnClickListener() {
+            /*@Override
+            public void onClick(View v) {
+                com.example.app1.DatePicker mDatePickerDialogFragment;
+                mDatePickerDialogFragment = new com.example.app1.DatePicker();
+                mDatePickerDialogFragment.show(getSupportFragmentManager(), "DATE PICK");
+            }
+        });
+             */
+
+        /*public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+            Calendar mCalendar = Calendar.getInstance();
+            mCalendar.set(Calendar.YEAR, year);
+            mCalendar.set(Calendar.MONTH, month);
+            mCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+            String selectedDate = DateFormat.getDateInstance(DateFormat.FULL).format(mCalendar.getTime());
+            tvDate.setText(selectedDate);
+        }
+         */

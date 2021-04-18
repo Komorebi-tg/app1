@@ -25,7 +25,7 @@ public class SettingsFragment extends Fragment {
         accountCentre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                message.setText("Web site is being constracted.");
+                message.setText("Web site is under construction.");
                 //Uri uri = Uri.parse("https://...");
                 //Intent i = new Intent(Intent.ACTION_VIEW, uri);
                 //startActivity(i);

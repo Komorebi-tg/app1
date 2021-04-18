@@ -26,7 +26,7 @@ public class SettingsPrivacyFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                message.setText("Web site is being constracted.");
+                message.setText("Web site is under construction.");
                 /*message.postDelayed(new Runnable() {
                     @Override
                     public void run() {
