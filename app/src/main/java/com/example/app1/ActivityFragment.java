@@ -55,7 +55,7 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 // Our first time displaying this, there will be no posts.
                 // Fill in the examples;
                 Post post1 = new Post();
-                post1.category = category;
+                post1.category = "activity";
                 post1.title = "ときめきロボコン2021!";
                 post1.image = "activityrobocon";
                 db.postDao().insert(post1);
@@ -82,8 +82,8 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
             ImageButton image = new ImageButton(getContext());
             String imageName = post.image != null && !post.image.isEmpty() ? post.image : "activityrobocon";
             image.setBackgroundResource(getResources().getIdentifier(imageName, "drawable", "com.example.app1"));
-            image.setOnClickListener((View v) -> {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, DisplayPostFragment.newInstance(post.uid)).commit();
+                image.setOnClickListener((View v) -> {
+                    getFragmentManager().beginTransaction().replace(R.id.fragment_container, DisplayPostFragment.newInstance(post.uid)).commit();
             });
             ViewGroup.LayoutParams imageParams = new ViewGroup.LayoutParams(320, 320);
             image.setLayoutParams(imageParams);

@@ -72,7 +72,8 @@
                     android:id="@+id/editTextName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name" />
+                    android:hint="Name"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -90,7 +91,8 @@
                     android:id="@+id/editTextNickname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nickname" />
+                    android:hint="Nickname"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
@@ -111,7 +113,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Gender"
-                    android:inputType="textPersonName" />
+                    android:inputType="text" />
 
             </LinearLayout>
 
@@ -131,7 +133,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:hint="School Name" />
+                    android:hint="School Name"
+                    android:inputType="text"/>
             </LinearLayout>
 
             <LinearLayout
