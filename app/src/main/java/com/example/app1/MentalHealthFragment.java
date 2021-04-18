@@ -1,6 +1,7 @@
 package com.example.app1;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,20 +24,27 @@ import com.example.app1.model.Post;
 
 import java.util.List;
 
-public class MentalHealthFragment extends Fragment {
+public class MentalHealthFragment extends Fragment implements SearchView.OnQueryTextListener {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mental_health, container, false);
         displayPosts(view, "mental_health", null);
         SearchView searchView = view.findViewById(R.id.mental_health_search);
-        searchView.setOnSearchClickListener((View view2) -> {
-            ScrollView scrollView = view.findViewById(R.id.mental_health_scroll);
-            scrollView.removeAllViews();
-            String query = searchView.getQuery().toString();
-            displayPosts(view, "mental_health", query);
-        });
+        searchView.setOnQueryTextListener(this);
         return view;
+    }
+
+    public boolean onQueryTextSubmit(String query) {
+        return onQueryTextChange(query);
+    }
+
+    public boolean onQueryTextChange(String newText) {
+        ScrollView scrollView = getView().findViewById(R.id.mental_health_scroll);
+        scrollView.removeAllViews();
+        displayPosts(getView(), "mental_health", newText);
+        return false;
     }
 
     public void displayPosts(View view, @NonNull String category, @Nullable String query) {
