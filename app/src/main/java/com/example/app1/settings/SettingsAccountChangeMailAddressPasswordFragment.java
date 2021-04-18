@@ -35,11 +35,20 @@ public class SettingsAccountChangeMailAddressPasswordFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String ma = textViewma.getText().toString();
-                Profile newProfile = new Profile();
+                Profile newProfile = db.profileDao().getProfile();
                 newProfile.email = ma;
-                db.profileDao().insert(newProfile);  // insert new profile
+                db.profileDao().delete();
+                db.profileDao().insert(newProfile);
                 message.setText("Mail Address has been changed successfully");
-                /* if (ma == profile.email) {
+
+            }
+        });
+
+        return view;
+    }
+}
+
+/* if (ma == profile.email) {
                     // Does the below changes every Profile data or just the password?
                     Profile newProfile = new Profile();
                     //newProfile.email = email;
@@ -49,9 +58,3 @@ public class SettingsAccountChangeMailAddressPasswordFragment extends Fragment {
                     message.setText("Incorrect");
                 }
                  */
-            }
-        });
-
-        return view;
-    }
-}

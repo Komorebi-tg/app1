@@ -44,9 +44,10 @@ public class SettingsAccountChangePasswordFragment extends Fragment {
                 String newPC = editTextNewPasswordConfirm.getText().toString();
                 if (currentP.equals(profile.password)) {
                     if (newP.equals(newPC)) {
-                        Profile newProfile = new Profile();
+                        Profile newProfile = db.profileDao().getProfile();
                         newProfile.password = newP;
-                        db.profileDao().insert(newProfile);  // insert new profile
+                        db.profileDao().delete();
+                        db.profileDao().insert(newProfile);
                         message.setText("Password has been changed successfully" );
                     }
                     else {

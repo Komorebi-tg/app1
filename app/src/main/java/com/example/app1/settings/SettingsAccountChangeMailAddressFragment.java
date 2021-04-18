@@ -38,10 +38,9 @@ public class SettingsAccountChangeMailAddressFragment extends Fragment {
             public void onClick(View v) {
                 String mailaddress = editTextmailaddress.getText().toString();
                 String password = editTextpassword.getText().toString();
-                if (mailaddress == profile.email) {
-                    if (password == profile.password) {
+                if (mailaddress.equals(profile.email)) {
+                    if (password.equals(profile.password)) {
                         getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsAccountChangeMailAddressPasswordFragment()).commit();
-
                     } else {
                         message.setText("Incorrect Password");
                     }
