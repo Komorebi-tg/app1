@@ -165,7 +165,6 @@
             android:layout_marginRight="32dp"
             android:background="@color/スノーホワイト"
             android:scaleType="fitCenter"
-            android:src="@drawable/hottkaidouniversity"
             app:srcCompat="@drawable/activitysummercamp2"
             tools:ignore="MissingConstraints,OnClick" />
 
