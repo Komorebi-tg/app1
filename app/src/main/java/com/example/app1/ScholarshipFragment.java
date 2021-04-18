@@ -38,7 +38,7 @@ public class ScholarshipFragment extends Fragment implements SearchView.OnQueryT
     }
 
     public boolean onQueryTextChange(String newText) {
-        ScrollView scrollView = getView().findViewById(R.id.sholarships_scroll);
+        ScrollView scrollView = getView().findViewById(R.id.scholarships_scroll);
         scrollView.removeAllViews();
         displayPosts(getView(), "scholarship", newText);
         return false;
@@ -76,7 +76,7 @@ public class ScholarshipFragment extends Fragment implements SearchView.OnQueryT
         LinearLayout layout = new LinearLayout(getContext());
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setLayoutParams(params);
-        ScrollView scrollView = view.findViewById(R.id.sholarships_scroll);
+        ScrollView scrollView = view.findViewById(R.id.scholarships_scroll);
         scrollView.addView(layout);
         View leftCell = null;  // fill in rows of 2 columns
         for (Post post : posts) {
