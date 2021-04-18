@@ -12,4 +12,5 @@ public class Post {
     public String subtitle;
     public String body;
     public String image;
+    public boolean saved;
 }

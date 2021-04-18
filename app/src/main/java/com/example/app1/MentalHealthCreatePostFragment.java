@@ -35,6 +35,9 @@ public class MentalHealthCreatePostFragment extends Fragment {
                 // Save edited fields to database.
                 Post newPost = new Post();
                 newPost.category = "mental_health";
+//                newPost.title = ...;
+//                newPost.subtitle = ...;
+//                newPost.image = ...;
                 newPost.body = body.getText().toString();
                 db.postDao().insert(newPost);  // insert new profile
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
