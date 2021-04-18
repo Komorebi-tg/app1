@@ -43,14 +43,82 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextTextMultiLineCreateScholarshipsPost"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="Write your body text here"
-            android:inputType="textMultiLine" />
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="TItle"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="タイトルを入力"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Sub Title"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="サブタイトルを入力"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLineCreateActivitiesPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="本文を入力"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </ScrollView>
+
+        </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
     <Button
