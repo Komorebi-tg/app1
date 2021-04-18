@@ -43,6 +43,9 @@
     <string name="NewPasswordConfirm">新しいパスワード　確認</string>
     <string name="University">University</string>
     <string name="icon">TODO</string>
+    <string name="Incorrect">Incorrect</string>
+    <string name="negative">negative</string>
+    <string name="positive">positive</string>
     <string-array name="gender_list">
         <item>女性</item>
         <item>男性</item>

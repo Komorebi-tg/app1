@@ -36,6 +36,7 @@ public class MyProfileFragment extends Fragment {
         EditText editTextInterest4 = view.findViewById(R.id.editTextInterest4);
         EditText editTextEmail = view.findViewById(R.id.editTextEmail);
         EditText editTextphoneNumber = view.findViewById(R.id.editTextPhone);
+        EditText editTextPassword = view.findViewById(R.id.editTextPassword);
 
 
 
@@ -65,6 +66,7 @@ public class MyProfileFragment extends Fragment {
             editTextInterest4.setText(profile.interest4);
             editTextEmail.setText(profile.email);
             editTextphoneNumber.setText(profile.phoneNumber);
+            editTextPassword.setText(profile.password);
         }
 
         Button save = view.findViewById(R.id.Button_save);
@@ -88,6 +90,7 @@ public class MyProfileFragment extends Fragment {
                newProfile.interest4 = editTextInterest4.getText().toString();
                newProfile.email = editTextEmail.getText().toString();
                newProfile.phoneNumber = editTextphoneNumber.getText().toString();
+               newProfile.password = editTextPassword.getText().toString();
                db.profileDao().delete();            // delete existing profile
                db.profileDao().insert(newProfile);  // insert new profile
                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileDisplayFragment()).commit();

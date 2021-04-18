@@ -13,7 +13,7 @@ public class Profile {
     public String schoolName;
     public String grade;
     public String birthDate;
-    public Integer index_gender;
+    //public Integer index_gender;
     public String firstChoice;
     public String secondChoice;
     public String thirdChoice;
@@ -23,5 +23,6 @@ public class Profile {
     public String interest4;
     public String email;
     public String phoneNumber;
+    public String password;
     // ... add more fields here
 }
