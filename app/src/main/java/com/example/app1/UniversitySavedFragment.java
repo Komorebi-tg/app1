@@ -4,14 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -45,11 +44,6 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
             }
         });
-        return view;
-        View view = inflater.inflate(R.layout.fragment_about_universities, container, false);
-        displayPosts(view, "about_universities", null);
-        SearchView searchView = view.findViewById(R.id.about_universities_search);
-        searchView.setOnQueryTextListener(this);
         return view;
     }
 
