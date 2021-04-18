@@ -59,7 +59,9 @@
 
         <SearchView
             android:layout_width="280dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search here">
 
         </SearchView>
 
