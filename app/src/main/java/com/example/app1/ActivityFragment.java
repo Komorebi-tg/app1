@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 
@@ -113,6 +115,18 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
             cell.setLayoutParams(params);
             cell.addView(image);
             cell.addView(textView);
+            LinearLayout save = new LinearLayout(getContext());
+            save.setOrientation(LinearLayout.HORIZONTAL);
+            TextView saveTextView = new TextView(getContext());
+            saveTextView.setText("Save");
+            SwitchCompat aSwitch = new SwitchCompat(getContext());
+            aSwitch.setChecked(post.saved);
+            aSwitch.setOnCheckedChangeListener((CompoundButton buttonView, boolean isChecked) -> {
+                db.postDao().setSaved(post.uid, isChecked);
+            });
+            save.addView(saveTextView);
+            save.addView(aSwitch);
+            cell.addView(save);
             if (leftCell == null) {
                 leftCell = cell;
             } else {
