@@ -26,12 +26,6 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 message.setText("Web site is being constracted.");
-                message.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        message.setVisibility(View.INVISIBLE);
-                    }
-                }, 3000);
                 //Uri uri = Uri.parse("https://...");
                 //Intent i = new Intent(Intent.ACTION_VIEW, uri);
                 //startActivity(i);
