@@ -44,6 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10">
 
         <SearchView
+            android:id="@+id/scholarships_search"
             android:layout_width="280dp"
             android:layout_height="match_parent"
             android:iconifiedByDefault="false"
@@ -63,7 +64,7 @@
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/mental_health_scroll"
+        android:id="@+id/scholarships_scroll"
         android:layout_width="383dp"
         android:layout_height="337dp"
         android:layout_marginStart="16dp"
@@ -101,7 +102,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 android:layout_marginTop="8dp"/>
 
-            hy<TextView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="対象・・・公立高校出身の大学生"
