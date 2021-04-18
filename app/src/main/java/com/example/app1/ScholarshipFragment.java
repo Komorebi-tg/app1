@@ -56,12 +56,30 @@ public class ScholarshipFragment extends Fragment implements SearchView.OnQueryT
                 // Our first time displaying this, there will be no posts.
                 // Fill in the examples;
                 Post post1 = new Post();
-                post1.category = category;
+                post1.category = "scholarship";
                 post1.title = "公共財団法人ベアー奨学会";
-                post1.body = "対象・・・公立高校出身の大学生/n主な条件・・・公立高校出身であること/n金額(月額)・・・¥11500/n期間・・・在学期間中/n";
+                post1.body = "対象・・・公立高校出身の大学生¥n主な条件・・・公立高校出身であること¥n金額(月額)・・・¥11500¥n期間・・・在学期間中";
                 post1.image = "scholarshipgattkou";
                 db.postDao().insert(post1);
                 // add post2, post3, ...
+                Post post2 = new Post();
+                post2.category = "scholarship";
+                post2.title = "のりしお育英会";
+                post2.body = "対象・・・公立高校出身の大学生¥n主な条件・・・公立高校出身であること¥n金額(月額)・・・¥11500¥n期間・・・在学期間中";
+                post2.image = "test_print_mondaiyoushi";
+                db.postDao().insert(post2);
+
+                Post post3 = new Post();
+                post3.category = "scholarship";
+                post3.title = "A塾 特待制度";
+                post3.image = "scholarshipjyuku";
+                db.postDao().insert(post3);
+
+                Post post4 = new Post();
+                post4.category = "scholarship";
+                post4.title = "長期留学支援";
+                post4.image = "scholarshipryugaku";
+                db.postDao().insert(post4);
                 // get the posts again
                 posts = db.postDao().getPosts(category);
             }

@@ -58,7 +58,7 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
             Post post1 = new Post();
             post1.category = "about_universities";
             post1.title = "東京大学 文科2類";
-            post1.body = "大学の特色/nこの大学は〜/n location/n東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分/n67.5（河合塾）/n理科1類";
+            post1.body = "大学の特色/nこの大学は〜¥n location¥n東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分¥n67.5（河合塾）¥n理科1類";
             post1.image = "tokyouniversity";
             db.postDao().insert(post1);
             // add post2, post3, ...

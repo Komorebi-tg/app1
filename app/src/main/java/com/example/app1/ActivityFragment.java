@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 
@@ -57,8 +59,27 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 Post post1 = new Post();
                 post1.category = "activity";
                 post1.title = "ときめきロボコン2021!";
+                post1.body = "対象・・・高校生（中学三年生も可)¥n主な条件・・・首都圏に住んでいること¥n開催日・・・9/6¥n締め入り日・・・7/30";
                 post1.image = "activityrobocon";
                 db.postDao().insert(post1);
+
+                Post post2 = new Post();
+                post2.category = "activity";
+                post2.title = "異文化交流会";
+                post2.image = "activityibunnka2";
+                db.postDao().insert(post2);
+
+                Post post3 = new Post();
+                post3.category = "activity";
+                post3.title = "English Summer Camp";
+                post3.image = "activitysummercamp2";
+                db.postDao().insert(post3);
+
+                Post post4 = new Post();
+                post4.category = "activity";
+                post4.title = "街をきれいに！！";
+                post4.image = "acitvityvolunteer";
+                db.postDao().insert(post4);
                 // add post2, post3, ...
                 // get the posts again
                 posts = db.postDao().getPosts(category);
@@ -94,6 +115,18 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
             cell.setLayoutParams(params);
             cell.addView(image);
             cell.addView(textView);
+            LinearLayout save = new LinearLayout(getContext());
+            save.setOrientation(LinearLayout.HORIZONTAL);
+            TextView saveTextView = new TextView(getContext());
+            saveTextView.setText("Save");
+            SwitchCompat aSwitch = new SwitchCompat(getContext());
+            aSwitch.setChecked(post.saved);
+            aSwitch.setOnCheckedChangeListener((CompoundButton buttonView, boolean isChecked) -> {
+                db.postDao().setSaved(post.uid, isChecked);
+            });
+            save.addView(saveTextView);
+            save.addView(aSwitch);
+            cell.addView(save);
             if (leftCell == null) {
                 leftCell = cell;
             } else {
