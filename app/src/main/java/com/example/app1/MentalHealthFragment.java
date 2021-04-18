@@ -80,7 +80,7 @@ public class MentalHealthFragment extends Fragment {
             image.setOnClickListener((View v) -> {
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, DisplayPostFragment.newInstance(post.uid)).commit();
             });
-            ViewGroup.LayoutParams imageParams = new ViewGroup.LayoutParams(160, 160);
+            ViewGroup.LayoutParams imageParams = new ViewGroup.LayoutParams(320, 320);
             image.setLayoutParams(imageParams);
             TextView textView = new TextView(getContext());
             textView.setText(post.title);
