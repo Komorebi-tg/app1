@@ -8,7 +8,10 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.room.Room;
 
+import com.example.app1.dao.AppDatabase;
+import com.example.app1.model.Profile;
 import com.example.app1.settings.SettingsAccountChangeMailAddressFragment;
 import com.example.app1.settings.SettingsAccountChangeMailAddressPasswordFragment;
 import com.example.app1.settings.SettingsAccountChangePasswordFragment;
@@ -32,7 +35,19 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "app-database")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+        Profile profile = db.profileDao().getProfile();
+
+        if (profile != null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        } else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
+        }
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
