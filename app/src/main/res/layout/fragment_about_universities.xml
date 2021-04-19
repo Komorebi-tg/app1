@@ -76,136 +76,134 @@
 
     </ScrollView>
 
-    <!--
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:background="@color/スノーホワイト"
-            android:onClick="onClickButton21"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/aboutuniversitiestokyo"
-            tools:ignore="DuplicateIds,OnClick" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">-->
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickButton21"
-            android:text="東京大学 文科2類"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/スノーホワイト"
-            tools:ignore="OnClick" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton4"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:background="@color/スノーホワイト"-->
+<!--            android:onClick="onClickButton21"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:srcCompat="@drawable/aboutuniversitiestokyo"-->
+<!--            tools:ignore="DuplicateIds,OnClick" />-->
 
-        <Switch
-            android:id="@+id/switch8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save" />
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onClickButton21"-->
+<!--            android:text="東京大学 文科2類"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:backgroundTint="@color/スノーホワイト"-->
+<!--            tools:ignore="OnClick" />-->
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginTop="32dp"
-            android:background="@color/スノーホワイト"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/aboutuniversitieshitotsubashi"
-            tools:ignore="DuplicateIds,OnClick" />
+<!--        <Switch-->
+<!--            android:id="@+id/switch8"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save" />-->
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="一橋大学 経済学部"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/スノーホワイト"
-            tools:ignore="DuplicateIds,OnClick" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton4"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:background="@color/スノーホワイト"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:srcCompat="@drawable/aboutuniversitieshitotsubashi"-->
+<!--            tools:ignore="DuplicateIds,OnClick" />-->
 
-        <Switch
-            android:id="@+id/switch9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save" />
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="一橋大学 経済学部"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:backgroundTint="@color/スノーホワイト"-->
+<!--            tools:ignore="DuplicateIds,OnClick" />-->
 
-    </LinearLayout>
+<!--        <Switch-->
+<!--            android:id="@+id/switch9"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save" />-->
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginLeft="228dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="228dp"-->
+<!--        android:layout_marginLeft="228dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">-->
 
 
-        <ImageView
-            android:id="@+id/imageView2"
-            style="@style/Widget"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            android:background="@color/スノーホワイト"
-            android:scaleType="fitCenter"
-            android:src="@drawable/aboutuniversitieshottkaido"
-            app:srcCompat="@drawable/aboutuniversitieskyoto"
-            tools:ignore="MissingConstraints,OnClick" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            style="@style/Widget"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:layout_marginRight="32dp"-->
+<!--            android:background="@color/スノーホワイト"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:srcCompat="@drawable/aboutuniversitieskyoto"-->
+<!--            tools:ignore="MissingConstraints,OnClick" />-->
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="京都大学 経済学部"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/スノーホワイト"
-            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="京都大学 経済学部"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:backgroundTint="@color/スノーホワイト"-->
+<!--            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />-->
 
-        <Switch
-            android:id="@+id/switch3"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Save" />
+<!--        <Switch-->
+<!--            android:id="@+id/switch3"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save" />-->
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginTop="32dp"
-            android:background="@color/スノーホワイト"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/aboutuniversitieshottkaido"
-            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton4"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:background="@color/スノーホワイト"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:srcCompat="@drawable/aboutuniversitieshottkaido"-->
+<!--            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />-->
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="北海道大学 文学部"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/スノーホワイト"
-            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="北海道大学 文学部"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:backgroundTint="@color/スノーホワイト"-->
+<!--            tools:ignore="DuplicateIds,MissingConstraints,OnClick" />-->
 
-        <Switch
-            android:id="@+id/switch4"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Save" />
-    </LinearLayout>
--->
+<!--        <Switch-->
+<!--            android:id="@+id/switch4"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save" />-->
+<!--    </LinearLayout>-->
 
 
     <Button

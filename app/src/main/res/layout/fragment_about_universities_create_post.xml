@@ -61,7 +61,7 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="TItle"
+                android:text="Title"
                 android:textColor="@color/black"
                 android:textSize="16dp"/>
             <EditText
