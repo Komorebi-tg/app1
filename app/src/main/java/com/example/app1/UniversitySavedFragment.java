@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -24,31 +23,15 @@ import com.example.app1.model.Post;
 import java.util.List;
 
 public class UniversitySavedFragment extends Fragment implements SearchView.OnQueryTextListener {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_univerity_saved, container, false);
-        ImageButton imageButton = view.findViewById(R.id.imageButton4);
-        Button button = view.findViewById(R.id.button5);
         ImageButton arrow = view.findViewById(R.id.imageButton);
-
-        /*imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
-            }
-        });
-
-         */
-
-        /*button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
-            }
-        });
-
-         */
+        displayPosts(view, "university", null);
+        SearchView searchView = view.findViewById(R.id.about_universities_search);
+        searchView.setOnQueryTextListener(this);
 
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +39,6 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityHikakuFragment()).commit();
             }
         });
-
 
         return view;
     }

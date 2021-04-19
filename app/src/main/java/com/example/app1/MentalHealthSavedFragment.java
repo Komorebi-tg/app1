@@ -54,7 +54,6 @@ public class MentalHealthSavedFragment extends Fragment implements SearchView.On
 
             posts = db.postDao().getSavedPosts(category);
 
-
             LinearLayout.LayoutParams params =
                     new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             params.setMargins(32, 32, 32, 0);
