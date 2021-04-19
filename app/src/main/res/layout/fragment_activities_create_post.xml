@@ -54,7 +54,7 @@
            <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="タイトルを入力"
+            android:hint="タイトルを入力"
                android:textColor="@color/black"
                android:textSize="12dp"/>
        </LinearLayout>
@@ -72,7 +72,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="サブタイトルを入力"
+            android:hint="サブタイトルを入力"
             android:textColor="@color/black"
             android:textSize="12dp"/>
         </LinearLayout>
