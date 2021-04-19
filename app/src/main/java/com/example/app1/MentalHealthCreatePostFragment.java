@@ -21,7 +21,9 @@ public class MentalHealthCreatePostFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mental_health_create_post, container, false);
 
-        EditText body = view.findViewById(R.id.editTextTextMultiLineCreateScholarshipsPost);
+        EditText body = view.findViewById(R.id.mental_health_title);
+        EditText title = view.findViewById(R.id.mental_health_title);
+        EditText subtitle = view.findViewById(R.id.editTextTextMultiLineCreateScholarshipsPost);
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                 .allowMainThreadQueries()
@@ -35,9 +37,8 @@ public class MentalHealthCreatePostFragment extends Fragment {
                 // Save edited fields to database.
                 Post newPost = new Post();
                 newPost.category = "mental_health";
-//                newPost.title = ...;
-//                newPost.subtitle = ...;
-//                newPost.image = ...;
+                newPost.title = title.getText().toString();
+                newPost.subtitle = subtitle.getText().toString();
                 newPost.body = body.getText().toString();
                 db.postDao().insert(newPost);  // insert new profile
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new MentalHealthFragment()).commit();
