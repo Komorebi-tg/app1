@@ -51,8 +51,8 @@ public class ActivitySavedFragment extends Fragment implements SearchView.OnQuer
                 .fallbackToDestructiveMigration()
                 .build();
         List<Post> posts;
-        if (query == null || query.isEmpty()) {
-            posts = db.postDao().getPosts(category);
+
+            posts = db.postDao().getSavedPosts(category);
 
 
             LinearLayout.LayoutParams params =
@@ -112,6 +112,6 @@ public class ActivitySavedFragment extends Fragment implements SearchView.OnQuer
         }
 
 
-    }
+
 
 }
