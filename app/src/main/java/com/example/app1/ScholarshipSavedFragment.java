@@ -26,10 +26,8 @@ public class ScholarshipSavedFragment extends Fragment implements SearchView.OnQ
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_scholarship, container, false);
+        View view = inflater.inflate(R.layout.fragment_scholarship_saved, container, false);
         displayPosts(view, "scholarship", null);
-        SearchView searchView = view.findViewById(R.id.scholarships_search);
-        searchView.setOnQueryTextListener(this);
         return view;
     }
 
