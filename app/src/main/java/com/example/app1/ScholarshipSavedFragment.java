@@ -50,8 +50,7 @@ public class ScholarshipSavedFragment extends Fragment implements SearchView.OnQ
                 .fallbackToDestructiveMigration()
                 .build();
         List<Post> posts;
-        if (query == null || query.isEmpty()) {
-            posts = db.postDao().getPosts(category);
+            posts = db.postDao().getSavedPosts(category);
 
 
             LinearLayout.LayoutParams params =
@@ -104,6 +103,7 @@ public class ScholarshipSavedFragment extends Fragment implements SearchView.OnQ
                     leftCell = null;
                 }
             }
+
             if (leftCell != null) {
                 // last button by itself
                 layout.addView(leftCell);
@@ -111,6 +111,6 @@ public class ScholarshipSavedFragment extends Fragment implements SearchView.OnQ
         }
 
 
-    }
+
 
 }

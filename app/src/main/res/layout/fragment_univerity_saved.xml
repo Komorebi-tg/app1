@@ -27,8 +27,7 @@
         android:onClick="onClickButton24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_compare_arrows_24"
-        tools:ignore="OnClick" />
+        app:srcCompat="@drawable/ic_baseline_compare_arrows_24" />
 
     <TextView
         android:id="@+id/textView10"

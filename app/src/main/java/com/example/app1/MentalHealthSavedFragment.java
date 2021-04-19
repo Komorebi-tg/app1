@@ -51,8 +51,8 @@ public class MentalHealthSavedFragment extends Fragment implements SearchView.On
                 .fallbackToDestructiveMigration()
                 .build();
         List<Post> posts;
-        if (query == null || query.isEmpty()) {
-            posts = db.postDao().getPosts(category);
+
+            posts = db.postDao().getSavedPosts(category);
 
 
             LinearLayout.LayoutParams params =
@@ -109,7 +109,7 @@ public class MentalHealthSavedFragment extends Fragment implements SearchView.On
                 // last button by itself
                 layout.addView(leftCell);
             }
-        }
+
 
 
     }
