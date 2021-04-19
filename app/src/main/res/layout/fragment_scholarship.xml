@@ -161,7 +161,6 @@
             android:background="@color/スノーホワイト"
             android:onClick="onClickButton2222"
             android:scaleType="fitCenter"
-            android:src="@drawable/hottkaidouniversity"
             app:srcCompat="@drawable/scholarshipgroup"
             tools:ignore="MissingConstraints,OnClick" />
 

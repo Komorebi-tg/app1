@@ -43,35 +43,60 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="52dp"
-        android:background="@color/スノーホワイト"
-        android:onClick="onClickButton2221"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/activityrobocon"
-        tools:ignore="MissingConstraints,OnClick" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton4"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:background="@color/スノーホワイト"-->
+<!--        android:onClick="onClickButton2221"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView10"-->
+<!--        app:srcCompat="@drawable/activityrobocon"-->
+<!--        tools:ignore="MissingConstraints,OnClick" />-->
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="160dp"
+<!--    <Button-->
+<!--        android:id="@+id/button5"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:onClick="onClickButton2221"-->
+<!--        android:text="ときめきロボコン2021！"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:backgroundTint="@color/スノーホワイト"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageButton4"-->
+<!--        tools:ignore="MissingConstraints,OnClick" />-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="4dp"
-        android:onClick="onClickButton2221"
-        android:text="ときめきロボコン2021！"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/スノーホワイト"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        tools:ignore="MissingConstraints,OnClick" />
+        app:layout_constraintTop_toTopOf="@+id/textView15"/>
+
+    <ScrollView
+        android:id="@+id/activities_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

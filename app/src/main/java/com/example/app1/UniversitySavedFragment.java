@@ -31,9 +31,6 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
         View view = inflater.inflate(R.layout.fragment_univerity_saved, container, false);
         ImageButton arrow = view.findViewById(R.id.imageButton);
         displayPosts(view, CATEGORY, null);
-        SearchView searchView = view.findViewById(R.id.about_universities_search);
-        searchView.setOnQueryTextListener(this);
-
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

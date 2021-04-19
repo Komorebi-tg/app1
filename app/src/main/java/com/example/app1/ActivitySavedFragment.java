@@ -27,10 +27,8 @@ public class ActivitySavedFragment extends Fragment implements SearchView.OnQuer
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_activity, container, false);
+        View view = inflater.inflate(R.layout.fragment_activity_saved, container, false);
         displayPosts(view, "activity", null);
-        SearchView searchView = view.findViewById(R.id.activity_search);
-        searchView.setOnQueryTextListener(this);
         return view;
     }
 
