@@ -53,16 +53,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView15">
 
-    <SearchView
-        android:id="@+id/about_universities_search"
-        android:layout_width="280dp"
-        android:layout_height="match_parent"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search here">
+        <SearchView
+            android:id="@+id/about_universities_search"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search here">
 
-    </SearchView>
+        </SearchView>
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Search"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="136dp" />
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/about_universities_scroll"
@@ -74,6 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
     </ScrollView>
+
 
     <!--
     <ImageButton
