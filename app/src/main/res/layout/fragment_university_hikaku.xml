@@ -32,6 +32,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--
+
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
@@ -44,8 +46,29 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
 
+
+        <SearchView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search here">
+
+        </SearchView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Search"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/スノーホワイト" />
+
+    </LinearLayout>
+
+-->
 
     <TextView
         android:id="@+id/textView17"
@@ -57,7 +80,7 @@
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView16"
@@ -85,6 +108,79 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="・共通テスト
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -100,7 +196,79 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="・個別二次試験
-　　　　　英語 国語  数学 社会2科目(日本史 世界史 地理) "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        英語 国語  数学 社会2科目(日本史 世界史 地理) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -143,6 +311,79 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="・共通テスト
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         国語  数学(I AⅡB) 英語  理科基礎2科目(化学 生物 物理 地学 の基礎) or 理科1科目(化学 生物 物理 地学) 社会2科目(日本史 世界史 地理 政経 倫政) "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,7 +399,76 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="・個別二次試験
-　　　　　 英語 国語 数学 社会1科目 (日本史 世界史 地理)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        英語 国語 数学 社会1科目 (日本史 世界史 地理)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />

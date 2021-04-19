@@ -77,13 +77,13 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 Post post2 = new Post();
                 post2.category = "activity";
                 post2.title = "異文化交流会";
-                post2.image = "activityibunnka2";
+                post2.image = "activityibunnka";
                 db.postDao().insert(post2);
 
                 Post post3 = new Post();
                 post3.category = "activity";
                 post3.title = "English Summer Camp";
-                post3.image = "activitysummercamp2";
+                post3.image = "activitysummercamp";
                 db.postDao().insert(post3);
 
                 Post post4 = new Post();
