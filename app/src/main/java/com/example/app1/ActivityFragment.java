@@ -19,6 +19,7 @@ import androidx.room.Room;
 
 import com.example.app1.dao.AppDatabase;
 import com.example.app1.model.Post;
+import com.example.app1.model.Profile;
 
 import java.util.List;
 
@@ -33,8 +34,10 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 .allowMainThreadQueries()
                 .fallbackToDestructiveMigration()
                 .build();
-        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
-            View writePost = view.findViewById(R.id.button9);
+
+        Profile profile = db.profileDao().getProfile();
+        if (!(profile != null && "大学以上".equals(profile.grade))) {
+            View writePost = view.findViewById(R.id.button7);
             if (writePost != null) {
                 writePost.setVisibility(View.INVISIBLE);
             }
@@ -42,6 +45,7 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
         displayPosts(view, "activity", null);
         SearchView searchView = view.findViewById(R.id.activity_search);
         searchView.setOnQueryTextListener(this);
+
         return view;
     }
 
@@ -62,8 +66,18 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 .fallbackToDestructiveMigration()
                 .build();
         List<Post> posts;
-        if (query == null || query.isEmpty()) {
-            posts = db.postDao().getPosts(category);
+        Profile profile = db.profileDao().getProfile();
+        posts = db.postDao().getPosts(category);
+
+        if (!(profile != null && "大学以上".equals(profile.grade))) {
+            View writePost = view.findViewById(R.id.button7);
+            if (writePost != null) {
+                writePost.setVisibility(View.INVISIBLE);
+            }
+
+
+
+
             if (posts.isEmpty()) {
                 // Our first time displaying this, there will be no posts.
                 // Fill in the examples;

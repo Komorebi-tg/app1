@@ -19,6 +19,7 @@ import androidx.room.Room;
 
 import com.example.app1.dao.AppDatabase;
 import com.example.app1.model.Post;
+import com.example.app1.model.Profile;
 
 import java.util.List;
 
@@ -32,8 +33,9 @@ public class MentalHealthFragment extends Fragment implements SearchView.OnQuery
                 .allowMainThreadQueries()
                 .fallbackToDestructiveMigration()
                 .build();
-        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
-            View writePost = view.findViewById(R.id.button8);
+        Profile profile = db.profileDao().getProfile();
+        if (!(profile != null && "大学以上".equals(profile.grade))) {
+            View writePost = view.findViewById(R.id.button7);
             if (writePost != null) {
                 writePost.setVisibility(View.INVISIBLE);
             }

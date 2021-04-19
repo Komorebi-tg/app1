@@ -19,6 +19,7 @@ import androidx.room.Room;
 
 import com.example.app1.dao.AppDatabase;
 import com.example.app1.model.Post;
+import com.example.app1.model.Profile;
 
 import java.util.List;
 
@@ -31,7 +32,9 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
                 .allowMainThreadQueries()
                 .fallbackToDestructiveMigration()
                 .build();
-        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
+
+        Profile profile = db.profileDao().getProfile();
+        if (!(profile != null && "大学以上".equals(profile.grade))) {
             View writePost = view.findViewById(R.id.button7);
             if (writePost != null) {
                 writePost.setVisibility(View.INVISIBLE);
