@@ -162,7 +162,7 @@
             android:onClick="onClickButton2222"
             android:scaleType="fitCenter"
             android:src="@drawable/hottkaidouniversity"
-            app:srcCompat="@drawable/test_print_mondaiyoushi"
+            app:srcCompat="@drawable/scholarshipgroup"
             tools:ignore="MissingConstraints,OnClick" />
 
         <Button
