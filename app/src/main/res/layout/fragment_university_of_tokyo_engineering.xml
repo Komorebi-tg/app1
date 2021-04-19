@@ -76,7 +76,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:layout_marginRight="15dp"
-                        app:srcCompat="@drawable/toudai" />
+                        app:srcCompat="@drawable/aboutuniversitiestokyo" />
 
                     <TextView
                         android:layout_width="wrap_content"
