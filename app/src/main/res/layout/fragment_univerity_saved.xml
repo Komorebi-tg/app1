@@ -65,28 +65,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView15">
-
-        <SearchView
-            android:id="@+id/about_universities_search"
-            android:layout_width="280dp"
-            android:layout_height="match_parent"
-            android:iconifiedByDefault="false"
-            android:queryHint="Search here">
-
-        </SearchView>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/Search"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/スノーホワイト"
-            tools:layout_editor_absoluteX="296dp"
-            tools:layout_editor_absoluteY="136dp" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="@+id/textView15"/>
 
     <ScrollView
         android:id="@+id/about_universities_scroll"
