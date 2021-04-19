@@ -70,25 +70,25 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
                 post1.category = "university";
                 post1.title = "東京大学 文科2類";
                 post1.body = "大学の特色 この大学は〜 \n location  東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分 \n 67.5（河合塾）\n 理科1類";
-                post1.image = "tokyouniversity";
+                post1.image = "aboutuniversitiestokyo";
                 db.postDao().insert(post1);
                 // add post2, post3, ...
                 Post post2 = new Post();
                 post2.category = "university";
                 post2.title = "一橋大学 経済学部";
-                post2.image = "hitotsubashiuniversity";
+                post2.image = "aboutuniversitieshitotsubashi";
                 db.postDao().insert(post2);
 
                 Post post3 = new Post();
                 post3.category = "university";
                 post3.title = "京都大学 経済学部";
-                post3.image = "kyotouniversity";
+                post3.image = "aboutuniversitieskyoto";
                 db.postDao().insert(post3);
 
                 Post post4 = new Post();
                 post4.category = "university";
                 post4.title = "北海道大学 文学部";
-                post4.image = "hottkaidouniversity";
+                post4.image = "aboutuniversitieshottkaido";
                 db.postDao().insert(post4);
                 // get the posts again
                 posts = db.postDao().getPosts("university");
