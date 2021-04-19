@@ -22,6 +22,9 @@ public class AboutUniversitiesCreatePostFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about_universities_create_post, container, false);
 
         EditText body = view.findViewById(R.id.editTextTextMultiLineCreateScholarshipsPost);
+        EditText title = view.findViewById(R.id.university_title);
+
+
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
                 .allowMainThreadQueries()
@@ -34,7 +37,7 @@ public class AboutUniversitiesCreatePostFragment extends Fragment {
             save.setOnClickListener((View v) -> {
                 // Save edited fields to database.
                 Post newPost = new Post();
-                newPost.category = "about_universities";
+                newPost.category = "university";
                 newPost.body = body.getText().toString();
                 db.postDao().insert(newPost);  // insert new profile
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUniversitiesFragment()).commit();

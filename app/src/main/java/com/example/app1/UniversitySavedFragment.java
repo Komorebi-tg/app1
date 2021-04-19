@@ -23,13 +23,14 @@ import com.example.app1.model.Post;
 import java.util.List;
 
 public class UniversitySavedFragment extends Fragment implements SearchView.OnQueryTextListener {
+    public static String CATEGORY = "university";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_univerity_saved, container, false);
         ImageButton arrow = view.findViewById(R.id.imageButton);
-        displayPosts(view, "university", null);
+        displayPosts(view, CATEGORY, null);
         SearchView searchView = view.findViewById(R.id.about_universities_search);
         searchView.setOnQueryTextListener(this);
 
@@ -50,7 +51,7 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
     public boolean onQueryTextChange(String newText) {
         ScrollView scrollView = getView().findViewById(R.id.about_universities_scroll);
         scrollView.removeAllViews();
-        displayPosts(getView(), "about_universities", newText);
+        displayPosts(getView(), CATEGORY, newText);
         return false;
     }
 
