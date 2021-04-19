@@ -30,20 +30,34 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
         View view = inflater.inflate(R.layout.fragment_univerity_saved, container, false);
         ImageButton imageButton = view.findViewById(R.id.imageButton4);
         Button button = view.findViewById(R.id.button5);
+        ImageButton arrow = view.findViewById(R.id.imageButton);
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        /*imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+         */
+
+        /*button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityOfTokyoEngineeringFragment()).commit();
             }
         });
+
+         */
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new UniversityHikakuFragment()).commit();
+            }
+        });
+
+
         return view;
     }
 
@@ -66,7 +80,6 @@ public class UniversitySavedFragment extends Fragment implements SearchView.OnQu
         List<Post> posts;
 
             posts = db.postDao().getSavedPosts(category);
-
 
             LinearLayout.LayoutParams params =
                     new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);

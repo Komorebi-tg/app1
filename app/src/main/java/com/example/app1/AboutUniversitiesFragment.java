@@ -31,12 +31,13 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
                 .allowMainThreadQueries()
                 .fallbackToDestructiveMigration()
                 .build();
-        if (!"大学以上".equals(db.profileDao().getProfile().grade)) {
+        if ("大学以上".equals(db.profileDao().getProfile().grade)) {
             View writePost = view.findViewById(R.id.button7);
             if (writePost != null) {
                 writePost.setVisibility(View.INVISIBLE);
             }
         }
+
         displayPosts(view, "about_universities", null);
         SearchView searchView = view.findViewById(R.id.about_universities_search);
         searchView.setOnQueryTextListener(this);

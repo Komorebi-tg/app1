@@ -42,9 +42,13 @@ public class MainActivity extends AppCompatActivity {
         Profile profile = db.profileDao().getProfile();
 
         if (profile != null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+            navigationView.setSelectedItemId(R.id.nav_home);
+            navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_home));
         } else {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyProfileFragment()).commit();
+            BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+            navigationView.setSelectedItemId(R.id.nav_my_profile);
+            navListener.onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_my_profile));
         }
 
         //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
