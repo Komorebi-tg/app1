@@ -38,7 +38,7 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
             }
         }
 
-        displayPosts(view, "about_universities", null);
+        displayPosts(view, "university", null);
         SearchView searchView = view.findViewById(R.id.about_universities_search);
         searchView.setOnQueryTextListener(this);
         return view;
@@ -51,7 +51,7 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
     public boolean onQueryTextChange(String newText) {
         ScrollView scrollView = getView().findViewById(R.id.about_universities_scroll);
         scrollView.removeAllViews();
-        displayPosts(getView(), "about_universities", newText);
+        displayPosts(getView(), "university", newText);
         return false;
     }
 
@@ -67,31 +67,31 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
                 // Our first time displaying this, there will be no posts.
                 // Fill in the examples;
                 Post post1 = new Post();
-                post1.category = "about_universities";
+                post1.category = "university";
                 post1.title = "東京大学 文科2類";
                 post1.body = "大学の特色/nこの大学は〜¥n location¥n東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分¥n67.5（河合塾）¥n理科1類";
                 post1.image = "tokyouniversity";
                 db.postDao().insert(post1);
                 // add post2, post3, ...
                 Post post2 = new Post();
-                post2.category = "about_universities";
+                post2.category = "university";
                 post2.title = "一橋大学 経済学部";
                 post2.image = "hitotsubashiuniversity";
                 db.postDao().insert(post2);
 
                 Post post3 = new Post();
-                post3.category = "about_universities";
+                post3.category = "university";
                 post3.title = "京都大学 経済学部";
                 post3.image = "kyotouniversity";
                 db.postDao().insert(post3);
 
                 Post post4 = new Post();
-                post4.category = "about_universities";
+                post4.category = "university";
                 post4.title = "北海道大学 文学部";
                 post4.image = "hottkaidouniversity";
                 db.postDao().insert(post4);
                 // get the posts again
-                posts = db.postDao().getPosts("about_universities");
+                posts = db.postDao().getPosts("university");
             }
         } else {
             posts = db.postDao().searchPosts(category, query);

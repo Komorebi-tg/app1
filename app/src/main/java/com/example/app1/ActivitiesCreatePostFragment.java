@@ -21,6 +21,8 @@ public class ActivitiesCreatePostFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activities_create_post, container, false);
 
+        EditText title = view.findViewById(R.id.activity_title);
+        EditText subtitle = view.findViewById(R.id.activity_subtitle);
         EditText body = view.findViewById(R.id.editTextTextMultiLineCreateScholarshipsPost);
 
         AppDatabase db = Room.databaseBuilder(getContext(), AppDatabase.class, "app-database")
@@ -35,6 +37,8 @@ public class ActivitiesCreatePostFragment extends Fragment {
                 // Save edited fields to database.
                 Post newPost = new Post();
                 newPost.category = "activities";
+                newPost.title = title.getText().toString();
+                newPost.subtitle = subtitle.getText().toString();
                 newPost.body = body.getText().toString();
                 db.postDao().insert(newPost);  // insert new profile
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new ActivityFragment()).commit();
