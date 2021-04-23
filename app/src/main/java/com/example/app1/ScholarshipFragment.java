@@ -70,7 +70,7 @@ public class ScholarshipFragment extends Fragment implements SearchView.OnQueryT
                 Post post1 = new Post();
                 post1.category = "scholarship";
                 post1.title = "公共財団法人ベアー奨学会";
-                post1.body = "対象・・・公立高校出身の大学生¥n主な条件・・・公立高校出身であること¥n金額(月額)・・・¥11500¥n期間・・・在学期間中";
+                post1.body = "対象・・・公立高校出身の大学生 \r\n 主な条件・・・公立高校出身であること \r\n 金額(月額)・・・¥11500 \r\n 期間・・・在学期間中 \r\n\n 私たちは、「子どもは歴史の希望である」という基本理念に基づき、子どもたちの最善の利益を目指した活動を行っている公益財団法人です。すべての子ども・若者たちが、自分らしく心と身体が健康に成長できる社会づくりに、様々な視点と角度から取り組んでいきます。" ;
                 post1.image = "scholarshipschool";
                 db.postDao().insert(post1);
                 // add post2, post3, ...

@@ -190,6 +190,12 @@ public class MainActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     Fragment selectedFragment = null;
 
+                    AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "app-database")
+                            .allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
+                            .build();
+                    Profile profile = db.profileDao().getProfile();
+
                     switch(item.getItemId()) {
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
@@ -201,8 +207,13 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new MentalHealthFragment();
                             break;
                         case R.id.nav_my_profile:
+                            if (profile != null) {
+                                selectedFragment = new MyProfileFragment();
+                            } else {
+                                selectedFragment = new MyProfileDisplayFragment();
+                            }
 
-                            selectedFragment = new MyProfileFragment();
+                            //selectedFragment = new MyProfileFragment();
                             break;
                     }
 

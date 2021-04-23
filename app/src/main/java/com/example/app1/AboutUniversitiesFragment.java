@@ -72,7 +72,7 @@ public class AboutUniversitiesFragment extends Fragment implements SearchView.On
                 Post post1 = new Post();
                 post1.category = "university";
                 post1.title = "東京大学 文科2類";
-                post1.body = "大学の特色 この大学は〜 \n location  東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分 \n 67.5（河合塾）\n 理科1類";
+                post1.body = "大学の特色 この大学は〜 \r\n location  東京大学本郷キャンパスー本郷三丁目駅（地下鉄丸の内線、地下鉄大江戸線）徒歩10分、根津駅（地下鉄千代田線）徒歩5〜10分、東大前駅（地下鉄南北線）徒歩10分 \r\n 67.5（河合塾）\r\n 理科1類 \n\n 東京大学には、特に創立時に明文化された建学の精神はない。しかし、国立大学法人化に伴い、現在は「東京大学憲章」が定められている。東京大学憲章は、「大学」としての使命を公に明らかにすることと、目指すべき道を明らかにすることを目的として学内有識者会議によって制定されたものである。学部教育の基礎としてリベラル・アーツ教育（教養教育）を重視することを謳っている。";
                 post1.image = "aboutuniversitiestokyo";
                 db.postDao().insert(post1);
                 // add post2, post3, ...

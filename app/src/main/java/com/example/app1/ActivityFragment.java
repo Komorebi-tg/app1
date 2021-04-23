@@ -84,7 +84,7 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 Post post1 = new Post();
                 post1.category = "activity";
                 post1.title = "ときめきロボコン2021!";
-                post1.body = "対象・・・高校生（中学三年生も可)¥n主な条件・・・首都圏に住んでいること¥n開催日・・・9/6¥n締め入り日・・・7/30";
+                post1.body = "対象・・・高校生（中学三年生も可) \r\n 主な条件・・・首都圏に住んでいること \r\n 開催日・・・9/6 \r\n 締め入り日・・・7/30 \r\n\n ときめきロボコンクラブは小学生ロボコン支援活動、山水苑活動、講演会を通しての教育・啓蒙活動、地方自治体への署名・請願活動、ファミリーイベントによる家族交流など様々な活動を通して国民運動に参加します！";
                 post1.image = "activityrobocon";
                 db.postDao().insert(post1);
 
@@ -103,7 +103,7 @@ public class ActivityFragment extends Fragment implements SearchView.OnQueryText
                 Post post4 = new Post();
                 post4.category = "activity";
                 post4.title = "街をきれいに！！";
-                post4.image = "acitvityvolunteer";
+                post4.image = "activityvolunteer";
                 db.postDao().insert(post4);
                 // add post2, post3, ...
                 // get the posts again
